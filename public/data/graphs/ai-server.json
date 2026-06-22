@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "kind": "stock-research-graph.authoring",
+  "graph": {
+    "label": "AI服务器产业链",
+    "summary": "围绕训练和推理服务器展开的产业图谱。",
+    "sortOrder": 10
+  },
+  "lanes": [
+    { "label": "算力芯片", "color": "#2563eb", "order": 10 },
+    { "label": "PCB 与材料", "color": "#0f766e", "order": 20 },
+    { "label": "整机与散热", "color": "#d97706", "order": 30 }
+  ],
+  "nodes": [
+    {
+      "type": "narrative",
+      "label": "AI服务器产业链",
+      "weightTier": "high",
+      "summary": "AI 训练和推理服务器产业叙事。"
+    },
+    {
+      "type": "concept",
+      "label": "GPU",
+      "weightTier": "high",
+      "lane": "算力芯片",
+      "summary": "AI 训练和推理核心加速芯片。"
+    },
+    {
+      "type": "concept",
+      "label": "HBM",
+      "weightTier": "medium",
+      "lane": "算力芯片",
+      "summary": "高带宽内存，影响加速卡性能和供给。"
+    },
+    {
+      "type": "product",
+      "label": "高速 PCB",
+      "weightTier": "medium",
+      "lane": "PCB 与材料",
+      "summary": "承载高速信号传输的关键板材和制造环节。"
+    },
+    {
+      "type": "product",
+      "label": "液冷系统",
+      "weightTier": "medium",
+      "lane": "整机与散热",
+      "summary": "高功耗 AI 服务器常用散热方案。"
+    },
+    {
+      "type": "company",
+      "label": "NVIDIA",
+      "weightTier": "high",
+      "market": "美股",
+      "ticker": "NVDA",
+      "summary": "AI GPU 龙头公司。"
+    },
+    {
+      "type": "company",
+      "label": "工业富联",
+      "weightTier": "medium",
+      "market": "A股",
+      "ticker": "601138",
+      "summary": "服务器制造与云计算基础设施相关公司。"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AI服务器产业链",
+      "to": "GPU",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "AI 服务器核心算力环节。"
+    },
+    {
+      "from": "AI服务器产业链",
+      "to": "高速 PCB",
+      "relationType": "contains",
+      "status": "research"
+    },
+    {
+      "from": "AI服务器产业链",
+      "to": "液冷系统",
+      "relationType": "contains",
+      "status": "research"
+    },
+    {
+      "from": "HBM",
+      "to": "GPU",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "HBM 是高端 GPU 模组的重要存储环节。"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "GPU",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NVIDIA 与 GPU 环节相关。"
+    },
+    {
+      "from": "company:工业富联:A股:601138",
+      "to": "AI服务器产业链",
+      "relationType": "exposure",
+      "status": "research",
+      "note": "公司业务与 AI 服务器制造环节相关。"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "graphs": [
+    {
+      "id": "ai-server",
+      "label": "AI服务器产业链",
+      "file": "ai-server.json",
+      "summary": "围绕训练和推理服务器展开的静态产研图谱示例。"
+    }
+  ]
+}
