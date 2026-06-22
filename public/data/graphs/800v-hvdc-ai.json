@@ -1,0 +1,1484 @@
+{
+  "schemaVersion": 2,
+  "kind": "stock-research-graph.authoring",
+  "graph": {
+    "label": "800V HVDC AI数据中心电力架构产业图谱",
+    "summary": "围绕NVIDIA 800V HVDC与华为AI数据中心高压直流配电架构的全产业链拆解，涵盖从原材料、功率半导体、固态变压器、电气总包、电源模块、PCB、被动元件到液冷系统的完整供应链关系。",
+    "sortOrder": 10
+  },
+  "lanes": [
+    {
+      "label": "叙事与驱动",
+      "color": "#dc2626",
+      "order": 10
+    },
+    {
+      "label": "原材料与基础材料",
+      "color": "#7c3aed",
+      "order": 20
+    },
+    {
+      "label": "功率半导体器件",
+      "color": "#2563eb",
+      "order": 30
+    },
+    {
+      "label": "电源转换设备",
+      "color": "#0f766e",
+      "order": 40
+    },
+    {
+      "label": "电气总包与系统",
+      "color": "#b45309",
+      "order": 50
+    },
+    {
+      "label": "服务器电源模块",
+      "color": "#be123c",
+      "order": 60
+    },
+    {
+      "label": "PCB与被动元件",
+      "color": "#047857",
+      "order": 70
+    },
+    {
+      "label": "散热与液冷系统",
+      "color": "#0369a1",
+      "order": 80
+    },
+    {
+      "label": "配套器件与材料",
+      "color": "#4d7c0f",
+      "order": 90
+    }
+  ],
+  "nodes": [
+    {
+      "type": "narrative",
+      "label": "800V HVDC AI数据中心电力架构",
+      "weightTier": "high",
+      "order": 10,
+      "lane": "叙事与驱动",
+      "summary": "NVIDIA与华为推动的AI数据中心高压直流配电革命，将机柜级供电电压从48V/54V提升至800V DC，支持单机柜功率从kW级跃升至MW级。"
+    },
+    {
+      "type": "narrative",
+      "label": "AI算力密度驱动",
+      "weightTier": "high",
+      "order": 20,
+      "lane": "叙事与驱动",
+      "summary": "AI服务器单机柜功率从H100时代的40kW跃升至GB200的120kW+，预计2030年达到MW级，传统配电架构已无法满足需求。"
+    },
+    {
+      "type": "narrative",
+      "label": "能效与铜减量化",
+      "weightTier": "high",
+      "order": 30,
+      "lane": "叙事与驱动",
+      "summary": "800V HVDC相比传统54V方案，铜用量减少45%-80%，全链路能效提升5个百分点，CAPEX和OPEX双双降低。"
+    },
+    {
+      "type": "concept",
+      "label": "固态变压器SST",
+      "weightTier": "high",
+      "order": 40,
+      "lane": "电源转换设备",
+      "summary": "SST将中压交流电（10-20kV）直接转换为800V DC，省去传统多级变压环节，是HVDC架构的核心设备，预计2026年商业化元年。"
+    },
+    {
+      "type": "concept",
+      "label": "SiC碳化硅功率器件",
+      "weightTier": "high",
+      "order": 50,
+      "lane": "功率半导体器件",
+      "summary": "第三代半导体，宽禁带特性使其在高频、高温、高压场景下效率远超硅基器件，是800V HVDC和SST的核心功率器件。"
+    },
+    {
+      "type": "concept",
+      "label": "GaN氮化镓功率器件",
+      "weightTier": "high",
+      "order": 60,
+      "lane": "功率半导体器件",
+      "summary": "适用于高频DC-DC转换，在800V架构中主要用于中间总线转换器（IBC）和低压侧转换，单机柜GaN价值量可达18万美元。"
+    },
+    {
+      "type": "concept",
+      "label": "800V HVDC配电架构",
+      "weightTier": "high",
+      "order": 70,
+      "lane": "电气总包与系统",
+      "summary": "NVIDIA主导的机架级高压直流配电标准，中压AC经SST转为800V DC，经母线槽分配至机架，再由DC-DC转为48V/12V供GPU/CPU使用。"
+    },
+    {
+      "type": "concept",
+      "label": "巴拿马电源",
+      "weightTier": "medium",
+      "order": 80,
+      "lane": "电源转换设备",
+      "summary": "阿里巴巴提出的数据中心供电方案，采用10kV输入、240V/336V HVDC输出的中压直供模式，国内已有成熟应用。"
+    },
+    {
+      "type": "concept",
+      "label": "液冷散热系统",
+      "weightTier": "high",
+      "order": 90,
+      "lane": "散热与液冷系统",
+      "summary": "AI服务器功率密度提升后，风冷无法满足散热需求，液冷（冷板式/浸没式）成为标配，与800V HVDC共同构成下一代AI数据中心基础设施。"
+    },
+    {
+      "type": "material",
+      "label": "铜母线",
+      "weightTier": "medium",
+      "order": 100,
+      "lane": "原材料与基础材料",
+      "summary": "AI数据中心配电柜核心导电材料，用于高压大电流电力传输，HVDC架构下虽铜总量减少，但母线规格和精度要求提升。"
+    },
+    {
+      "type": "material",
+      "label": "高速连接器材料",
+      "weightTier": "medium",
+      "order": 110,
+      "lane": "原材料与基础材料",
+      "summary": "AI服务器高速I/O连接器所需的高性能铜合金材料，要求高强度、高导电率、耐高温。"
+    },
+    {
+      "type": "material",
+      "label": "SiC衬底",
+      "weightTier": "high",
+      "order": 120,
+      "lane": "原材料与基础材料",
+      "summary": "碳化硅功率器件的基础材料，8英寸SiC衬底正成为主流，天岳先进等国内厂商已实现量产突破。"
+    },
+    {
+      "type": "product",
+      "label": "AI服务器电源PSU",
+      "weightTier": "high",
+      "order": 130,
+      "lane": "服务器电源模块",
+      "summary": "将AC或HVDC转换为GPU/CPU所需的多路低压DC（12V/5V/3.3V/0.8V），功率从5.5kW向12kW、18kW演进。"
+    },
+    {
+      "type": "product",
+      "label": "Power Shelf电源架",
+      "weightTier": "high",
+      "order": 140,
+      "lane": "服务器电源模块",
+      "summary": "机架级电源分配单元，容纳多个PSU模块，实现N+1冗余，Rubin平台单架功率达110kW。"
+    },
+    {
+      "type": "product",
+      "label": "HVDC整流柜",
+      "weightTier": "high",
+      "order": 150,
+      "lane": "电源转换设备",
+      "summary": "将中压交流电转换为高压直流电（240V/336V/800V），是HVDC供电系统的核心前端设备。"
+    },
+    {
+      "type": "product",
+      "label": "DC-DC中间总线转换器",
+      "weightTier": "high",
+      "order": 160,
+      "lane": "服务器电源模块",
+      "summary": "将800V DC降至48V/54V中间总线电压，再经VRM转为芯片级低压，GaN器件在此环节发挥关键作用。"
+    },
+    {
+      "type": "product",
+      "label": "厚铜电源PCB",
+      "weightTier": "medium",
+      "order": 170,
+      "lane": "PCB与被动元件",
+      "summary": "AI服务器电源板，铜厚从2-3oz提升至5-6oz以承载更大电流和电压，HVDC架构下价值量显著提升。"
+    },
+    {
+      "type": "product",
+      "label": "高压MLCC",
+      "weightTier": "medium",
+      "order": 180,
+      "lane": "PCB与被动元件",
+      "summary": "AI服务器MLCC用量是普通服务器的10-15倍，800V HVDC对高耐压、高容值MLCC提出更高要求。"
+    },
+    {
+      "type": "product",
+      "label": "薄膜电容",
+      "weightTier": "medium",
+      "order": 190,
+      "lane": "PCB与被动元件",
+      "summary": "HVDC电源滤波和支撑核心元件，单台AI服务器薄膜电容用量从4颗增至16颗，单机价值从300元提升至1500元。"
+    },
+    {
+      "type": "product",
+      "label": "CDU液冷分配单元",
+      "weightTier": "high",
+      "order": 200,
+      "lane": "散热与液冷系统",
+      "summary": "液冷系统核心设备，负责冷却液的分配、循环和温控，兼容800V HVDC供电体系，支持单机柜100kW+散热。"
+    },
+    {
+      "type": "product",
+      "label": "直流母线槽",
+      "weightTier": "medium",
+      "order": 210,
+      "lane": "电气总包与系统",
+      "summary": "800V HVDC机房内部电力分配干线，替代传统电缆，具有载流量大、散热好、布线整洁等优势。"
+    },
+    {
+      "type": "company",
+      "label": "NVIDIA",
+      "weightTier": "high",
+      "order": 220,
+      "lane": "叙事与驱动",
+      "summary": "AI GPU龙头，主导800V HVDC架构标准，Kyber机架系统2027年量产，全面采用800V DC供电。",
+      "ticker": "NVDA",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "Infineon",
+      "weightTier": "high",
+      "order": 230,
+      "lane": "功率半导体器件",
+      "summary": "全球功率半导体龙头，与NVIDIA合作开发800V HVDC架构，提供SiC/GaN全系列功率器件方案。",
+      "ticker": "IFNNY",
+      "market": "欧洲股市"
+    },
+    {
+      "type": "company",
+      "label": "Navitas",
+      "weightTier": "high",
+      "order": 240,
+      "lane": "功率半导体器件",
+      "summary": "GaN+SiC功率半导体领军者，GaNFast和GeneSiC产品线覆盖800V HVDC全链路，NVIDIA核心合作伙伴。",
+      "ticker": "NVTS",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "Wolfspeed",
+      "weightTier": "high",
+      "order": 250,
+      "lane": "功率半导体器件",
+      "summary": "全球SiC技术引领者，提供650V-6.5kV SiC MOSFET，AI数据中心收入连续三季度翻倍增长。",
+      "ticker": "WOLF",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "STMicroelectronics",
+      "weightTier": "high",
+      "order": 260,
+      "lane": "功率半导体器件",
+      "summary": "与NVIDIA合作开发12kW/20kW电源转换板，采用GaN功率晶体管，效率达97.5%，功率密度2500W/in³。",
+      "ticker": "STM",
+      "market": "欧洲股市"
+    },
+    {
+      "type": "company",
+      "label": "ON Semiconductor",
+      "weightTier": "high",
+      "order": 270,
+      "lane": "功率半导体器件",
+      "summary": "与NVIDIA合作加速800V DC电源系统迁移，EliteSiC产品组合持续扩展。",
+      "ticker": "ON",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "英诺赛科",
+      "weightTier": "high",
+      "order": 280,
+      "lane": "功率半导体器件",
+      "summary": "全球最大8英寸硅基GaN IDM厂商，NVIDIA 800V DC架构唯一中国芯片合作伙伴，港股上市（02577.HK），提供15V-1200V全链路GaN方案。"
+    },
+    {
+      "type": "company",
+      "label": "台达电子",
+      "weightTier": "high",
+      "order": 290,
+      "lane": "服务器电源模块",
+      "summary": "全球电源管理龙头，NVIDIA第一大电源供应商，推出全球首个SST智能直流供电商业化方案，800V HVDC系统核心供应商。",
+      "ticker": "DELTA",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "光宝科技",
+      "weightTier": "high",
+      "order": 300,
+      "lane": "服务器电源模块",
+      "summary": "全球五大电源厂商之一，NVIDIA GB200/GB300/Rubin电源核心供应商，台湾上市（2301.TW），5.5kW-33kW产品已量产。"
+    },
+    {
+      "type": "company",
+      "label": "麦格米特",
+      "weightTier": "high",
+      "order": 310,
+      "lane": "服务器电源模块",
+      "summary": "中国大陆唯一进入NVIDIA高端电源供应链企业，800V HVDC 570kW Side Rack方案已量产，从三供跃升为二供。",
+      "ticker": "002851",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "欧陆通",
+      "weightTier": "medium",
+      "order": 320,
+      "lane": "服务器电源模块",
+      "summary": "高功率服务器电源领先企业，3200W-5500W钛金电源已批量供货，越南基地2027年规模化量产。",
+      "ticker": "300870",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "奥海科技",
+      "weightTier": "medium",
+      "order": 330,
+      "lane": "服务器电源模块",
+      "summary": "算力电源覆盖550W-8000W，2025年上半年算力电源收入超5.3亿元，与瑞萨电子联合研发12kW产品。",
+      "ticker": "002993",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "Vertiv",
+      "weightTier": "high",
+      "order": 340,
+      "lane": "电气总包与系统",
+      "summary": "全球数据中心基础设施龙头，NVIDIA 800V HVDC联盟核心系统方案商，2026年下半年推出800V DC产品组合。",
+      "ticker": "VRT",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "Schneider Electric",
+      "weightTier": "high",
+      "order": 350,
+      "lane": "电气总包与系统",
+      "summary": "全球能源管理龙头，NVIDIA 800V HVDC联盟系统方案商，为微软、谷歌、Meta等供应AI数据中心电气设备。",
+      "ticker": "SU.PA",
+      "market": "欧洲股市"
+    },
+    {
+      "type": "company",
+      "label": "Eaton",
+      "weightTier": "high",
+      "order": 360,
+      "lane": "电气总包与系统",
+      "summary": "全球动力管理公司，NVIDIA 800V HVDC联盟核心成员，2025年发布800V DC参考架构，2MW SST样机验证中。",
+      "ticker": "ETN",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "ABB",
+      "weightTier": "high",
+      "order": 370,
+      "lane": "电气总包与系统",
+      "summary": "全球电气设备与自动化技术巨头，数据中心配电设备核心供应商，电工合金铜母线重要客户。",
+      "ticker": "ABBN",
+      "market": "欧洲股市"
+    },
+    {
+      "type": "company",
+      "label": "金盘科技",
+      "weightTier": "high",
+      "order": 380,
+      "lane": "电源转换设备",
+      "summary": "国内AIDC变压器出海龙头，10kV/2.4MW SST样机已完成，2026年Q1海外订单22.52亿元同比增长100%。",
+      "ticker": "688676",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "中国西电",
+      "weightTier": "high",
+      "order": 390,
+      "lane": "电源转换设备",
+      "summary": "国内输变电设备国家队，2.4MW SST已应用于东数西算贵安数据中心，效率97.5%+，SST订单突破20亿元。",
+      "ticker": "601179",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "四方股份",
+      "weightTier": "medium",
+      "order": 400,
+      "lane": "电源转换设备",
+      "summary": "国内SST技术领先企业，10kV/2.4MW SST转换效率98%+，2025年数据中心SST订单储备超30亿元。",
+      "ticker": "601126",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "伊戈尔",
+      "weightTier": "medium",
+      "order": 410,
+      "lane": "电源转换设备",
+      "summary": "数据中心移相变压器市占率超75%，2026年4月正式发布SST样品，北美直接客户订单翻倍增长。",
+      "ticker": "002922",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "特变电工",
+      "weightTier": "medium",
+      "order": 420,
+      "lane": "电源转换设备",
+      "summary": "全球变压器市占率第一，2.4MW SST批量应用于欧洲AI数据中心，体积缩小90%/效率98%+。",
+      "ticker": "600089",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "中恒电气",
+      "weightTier": "medium",
+      "order": 430,
+      "lane": "电源转换设备",
+      "summary": "阿里云HVDC核心供应商，巴拿马电源系统集成商，2024年数据中心电源业务营收同比增长111%。",
+      "ticker": "002364",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "禾望电气",
+      "weightTier": "medium",
+      "order": 440,
+      "lane": "电源转换设备",
+      "summary": "维谛技术HVDC架构核心分包商，多款HVDC产品批量应用于腾讯、字节跳动机房。",
+      "ticker": "603063",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "威尔高",
+      "weightTier": "high",
+      "order": 450,
+      "lane": "PCB与被动元件",
+      "summary": "台达PCB核心供应商（合作近20年），AI服务器电源PCB龙头，厚铜板技术业内领先，泰国工厂已投产。",
+      "ticker": "301251",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "沪电股份",
+      "weightTier": "high",
+      "order": 460,
+      "lane": "PCB与被动元件",
+      "summary": "GB200服务器PCB核心供应商，40层高多层板单机价值超4000元，配套台达高压电源模块。",
+      "ticker": "002463",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "景旺电子",
+      "weightTier": "medium",
+      "order": 470,
+      "lane": "PCB与被动元件",
+      "summary": "拟投资50亿元扩产高阶HDI产线，强化AI算力和高速网络通讯领域高端产能。",
+      "ticker": "603228",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "胜宏科技",
+      "weightTier": "medium",
+      "order": 480,
+      "lane": "PCB与被动元件",
+      "summary": "Rubin GPU PCB+78层正交背板供应商，显卡PCB市占率50%，通过台达间接进入NVIDIA供应链。",
+      "ticker": "300476",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "法拉电子",
+      "weightTier": "high",
+      "order": 490,
+      "lane": "PCB与被动元件",
+      "summary": "国内唯一批量进入NVIDIA供应链的薄膜电容厂商，绑定台达/光宝/麦格米特Tier1电源厂，2026年AI业务收入预计8-10亿元。",
+      "ticker": "600563",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "江海股份",
+      "weightTier": "medium",
+      "order": 500,
+      "lane": "PCB与被动元件",
+      "summary": "台达电解电容核心供应商，超级电容切入AI服务器供电，薄膜电容和超级电容双线布局数据中心。",
+      "ticker": "002484",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "可立克",
+      "weightTier": "medium",
+      "order": 510,
+      "lane": "PCB与被动元件",
+      "summary": "供应台达60%电源磁性元器件，SST整机能力获欧美大厂认证，深度绑定AI服务器电源项目。",
+      "ticker": "002782",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "英维克",
+      "weightTier": "high",
+      "order": 520,
+      "lane": "散热与液冷系统",
+      "summary": "全链条液冷解决方案龙头，Coolinside方案覆盖腾讯、阿里等头部客户，获谷歌17亿元液冷订单。",
+      "ticker": "002837",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "高澜股份",
+      "weightTier": "medium",
+      "order": 530,
+      "lane": "散热与液冷系统",
+      "summary": "掌握冷板式+浸没式双路线，字节跳动浸没式模组独家供应商，储能液冷全球市占率约35%。",
+      "ticker": "300499",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "同飞股份",
+      "weightTier": "medium",
+      "order": 540,
+      "lane": "散热与液冷系统",
+      "summary": "CDU产品切入昇腾供应链，兼容800V高压直流供电，支持单机柜100kW+散热需求。",
+      "ticker": "300990",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "申菱环境",
+      "weightTier": "medium",
+      "order": 550,
+      "lane": "散热与液冷系统",
+      "summary": "数据中心节能环控技术派，液冷系统服务于国内大型智算中心项目。",
+      "ticker": "301018",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "电工合金",
+      "weightTier": "high",
+      "order": 560,
+      "lane": "配套器件与材料",
+      "summary": "国内铜母线最大供应商（市占率30%），施耐德电气核心供应商，在墨西哥设立孙公司配套北美AI数据中心需求。",
+      "ticker": "300697",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "博威合金",
+      "weightTier": "medium",
+      "order": 570,
+      "lane": "配套器件与材料",
+      "summary": "AI算力产业多链条材料布局，GB300液冷板材料已批量供货，高速连接器材料实现批量供应。",
+      "ticker": "601137",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "三安光电",
+      "weightTier": "medium",
+      "order": 580,
+      "lane": "配套器件与材料",
+      "summary": "全球最大氮化镓衬底供应商，为英诺赛科8英寸产线提供高纯度蓝宝石衬底，占其采购量40%以上。",
+      "ticker": "600703",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "天岳先进",
+      "weightTier": "medium",
+      "order": 590,
+      "lane": "配套器件与材料",
+      "summary": "8英寸碳化硅衬底已实现量产，切入AI数据中心、光伏等高增长赛道，国际一线功率半导体厂商持续批量供货。",
+      "ticker": "688234",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "良信电器",
+      "weightTier": "medium",
+      "order": 600,
+      "lane": "配套器件与材料",
+      "summary": "数据中心断路器和配电设备供应商，产品覆盖低压至高压全系列，受益于AI数据中心配电需求增长。",
+      "ticker": "002706",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "盛弘股份",
+      "weightTier": "medium",
+      "order": 610,
+      "lane": "电源转换设备",
+      "summary": "自研800V HVDC模块采用英诺赛科GaN器件，转换效率98%，已通过英伟达硬件兼容性预测试。",
+      "ticker": "300693",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "Texas Instruments",
+      "weightTier": "high",
+      "order": 620,
+      "lane": "功率半导体器件",
+      "summary": "与NVIDIA合作开发800V HVDC电源分配系统，提供GaN功率器件和电源管理芯片。",
+      "ticker": "TXN",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "Murata",
+      "weightTier": "high",
+      "order": 630,
+      "lane": "PCB与被动元件",
+      "summary": "全球MLCC龙头，AI服务器MLCC用量是普通服务器10-15倍，产能向AI应用倾斜导致供应紧张。",
+      "ticker": "6981",
+      "market": "日股"
+    },
+    {
+      "type": "company",
+      "label": "Samsung Electro-Mechanics",
+      "weightTier": "high",
+      "order": 640,
+      "lane": "PCB与被动元件",
+      "summary": "全球MLCC第二大厂商，明确推紧凑型高电量AI服务器零件、高压汽车产品和高温VRM应用。",
+      "ticker": "009150",
+      "market": "韩股"
+    },
+    {
+      "type": "company",
+      "label": "Rohm",
+      "weightTier": "medium",
+      "order": 650,
+      "lane": "功率半导体器件",
+      "summary": "日本功率半导体厂商，NVIDIA 800V HVDC联盟芯片供应商，提供SiC功率器件。",
+      "ticker": "6963",
+      "market": "日股"
+    },
+    {
+      "type": "company",
+      "label": "Analog Devices",
+      "weightTier": "medium",
+      "order": 660,
+      "lane": "功率半导体器件",
+      "summary": "NVIDIA 800V HVDC联盟芯片供应商，提供电源管理芯片和隔离器件。",
+      "ticker": "ADI",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "Renesas",
+      "weightTier": "medium",
+      "order": 670,
+      "lane": "功率半导体器件",
+      "summary": "NVIDIA 800V HVDC联盟芯片供应商，提供数字电源控制器和功率器件。",
+      "ticker": "6723",
+      "market": "日股"
+    },
+    {
+      "type": "company",
+      "label": "Flex Power",
+      "weightTier": "medium",
+      "order": 680,
+      "lane": "服务器电源模块",
+      "summary": "伟创力，NVIDIA 800V HVDC联盟电源组件供应商，提供机架级电源和800V HVDC配电方案。",
+      "ticker": "FLEX",
+      "market": "美股"
+    },
+    {
+      "type": "company",
+      "label": "新特电气",
+      "weightTier": "medium",
+      "order": 690,
+      "lane": "电源转换设备",
+      "summary": "与维谛合作SST隔离变压器，布局整机配套，SST隔离变占价值量比重约1/3。",
+      "ticker": "301120",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "科士达",
+      "weightTier": "medium",
+      "order": 700,
+      "lane": "电气总包与系统",
+      "summary": "构建UPS电源、高压直流输电、一体化电力模块等完整产品体系，数据中心电源解决方案供应商。",
+      "ticker": "002518",
+      "market": "A股"
+    }
+  ],
+  "edges": [
+    {
+      "from": "company:沪电股份:A股:002463",
+      "to": "product:厚铜电源PCB",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "沪电40层高多层板单机价值超4000元"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "narrative:800V HVDC AI数据中心电力架构",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NVIDIA主导800V HVDC架构标准"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:麦格米特:A股:002851",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "麦格米特是NVIDIA大陆唯一高端电源供应商"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:英诺赛科",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "英诺赛科是NVIDIA 800V DC唯一中国芯片合作伙伴"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Renesas:日股:6723",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "瑞萨为NVIDIA提供数字电源控制器"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Rohm:日股:6963",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "罗姆为NVIDIA提供SiC功率器件"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:光宝科技",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "光宝是NVIDIA GB300/Rubin电源供应商"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Analog Devices:美股:ADI",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "ADI为NVIDIA提供电源管理芯片"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:台达电子:美股:DELTA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "台达是NVIDIA第一大电源供应商"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Eaton:美股:ETN",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "Eaton是NVIDIA 800V HVDC联盟核心成员"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Flex Power:美股:FLEX",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "Flex为NVIDIA提供机架级电源方案"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Infineon:欧洲股市:IFNNY",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "NVIDIA与Infineon合作开发800V HVDC架构"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Navitas:美股:NVTS",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "Navitas为Rubin Ultra提供GaN+SiC技术"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:ON Semiconductor:美股:ON",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "ON与NVIDIA合作加速800V DC迁移"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:STMicroelectronics:欧洲股市:STM",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "ST与NVIDIA合作开发12kW/20kW电源转换板"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Schneider Electric:欧洲股市:SU.PA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "施耐德是NVIDIA 800V HVDC联盟系统方案商"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Texas Instruments:美股:TXN",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "TI与NVIDIA合作开发800V HVDC系统"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:Vertiv:美股:VRT",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "Vertiv是NVIDIA 800V HVDC联盟系统方案商"
+    },
+    {
+      "from": "company:胜宏科技:A股:300476",
+      "to": "product:厚铜电源PCB",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "胜宏Rubin GPU PCB供应商"
+    },
+    {
+      "from": "company:中恒电气:A股:002364",
+      "to": "concept:巴拿马电源",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "中恒巴拿马电源系统集成商"
+    },
+    {
+      "from": "company:中恒电气:A股:002364",
+      "to": "product:HVDC整流柜",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "中恒阿里云HVDC核心供应商"
+    },
+    {
+      "from": "company:江海股份:A股:002484",
+      "to": "product:薄膜电容",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "江海电解电容+超级电容双线布局"
+    },
+    {
+      "from": "company:江海股份:A股:002484",
+      "to": "company:台达电子:美股:DELTA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "江海台达电解电容核心供应商"
+    },
+    {
+      "from": "company:科士达:A股:002518",
+      "to": "concept:800V HVDC配电架构",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "科士达UPS+HVDC完整产品体系"
+    },
+    {
+      "from": "company:良信电器:A股:002706",
+      "to": "concept:800V HVDC配电架构",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "良信数据中心断路器和配电设备"
+    },
+    {
+      "from": "company:可立克:A股:002782",
+      "to": "company:台达电子:美股:DELTA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "可立克供应台达60%电源磁性元器件"
+    },
+    {
+      "from": "company:英维克:A股:002837",
+      "to": "product:CDU液冷分配单元",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "英维克全链条液冷龙头"
+    },
+    {
+      "from": "company:英维克:A股:002837",
+      "to": "company:台达电子:美股:DELTA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "英维克为台达提供液冷CDU和冷板"
+    },
+    {
+      "from": "company:麦格米特:A股:002851",
+      "to": "concept:800V HVDC配电架构",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "麦格米特800V/570kW Side Rack方案已量产"
+    },
+    {
+      "from": "company:麦格米特:A股:002851",
+      "to": "product:AI服务器电源PSU",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "麦格米特18.5kW PSU测试表现优于光宝"
+    },
+    {
+      "from": "company:麦格米特:A股:002851",
+      "to": "product:Power Shelf电源架",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "麦格米特110kW 3RU Power Shelf全套方案"
+    },
+    {
+      "from": "company:伊戈尔:A股:002922",
+      "to": "concept:固态变压器SST",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "伊戈尔2026年4月发布SST样品"
+    },
+    {
+      "from": "company:奥海科技:A股:002993",
+      "to": "product:AI服务器电源PSU",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "奥海550W-8000W算力电源"
+    },
+    {
+      "from": "company:高澜股份:A股:300499",
+      "to": "product:CDU液冷分配单元",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "高澜双路线液冷方案"
+    },
+    {
+      "from": "company:盛弘股份:A股:300693",
+      "to": "product:HVDC整流柜",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "盛弘800V HVDC模块采用英诺赛科GaN"
+    },
+    {
+      "from": "company:盛弘股份:A股:300693",
+      "to": "company:英诺赛科",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "盛弘采用英诺赛科GaN器件"
+    },
+    {
+      "from": "company:电工合金:A股:300697",
+      "to": "material:铜母线",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "电工合金国内铜母线最大供应商"
+    },
+    {
+      "from": "company:电工合金:A股:300697",
+      "to": "company:ABB:欧洲股市:ABBN",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "电工合金ABB铜母线供应商"
+    },
+    {
+      "from": "company:电工合金:A股:300697",
+      "to": "product:直流母线槽",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "电工合金铜母线用于数据中心母线槽"
+    },
+    {
+      "from": "company:欧陆通:A股:300870",
+      "to": "product:AI服务器电源PSU",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "欧陆通3200W-5500W钛金电源"
+    },
+    {
+      "from": "company:同飞股份:A股:300990",
+      "to": "product:CDU液冷分配单元",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "同飞CDU切入昇腾供应链"
+    },
+    {
+      "from": "company:申菱环境:A股:301018",
+      "to": "product:CDU液冷分配单元",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "申菱液冷系统服务智算中心"
+    },
+    {
+      "from": "company:新特电气:A股:301120",
+      "to": "company:Vertiv:美股:VRT",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "新特与维谛合作SST隔离变压器"
+    },
+    {
+      "from": "company:新特电气:A股:301120",
+      "to": "concept:固态变压器SST",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "新特SST隔离变压器占价值量1/3"
+    },
+    {
+      "from": "company:威尔高:A股:301251",
+      "to": "product:厚铜电源PCB",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "威尔高厚铜板技术业内领先"
+    },
+    {
+      "from": "company:威尔高:A股:301251",
+      "to": "company:麦格米特:A股:002851",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "威尔高为麦格米特供应电源PCB"
+    },
+    {
+      "from": "company:威尔高:A股:301251",
+      "to": "company:台达电子:美股:DELTA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "威尔高是台达PCB核心供应商（近20年）"
+    },
+    {
+      "from": "company:威尔高:A股:301251",
+      "to": "company:Schneider Electric:欧洲股市:SU.PA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "威尔高为施耐德供应电源PCB"
+    },
+    {
+      "from": "company:特变电工:A股:600089",
+      "to": "concept:固态变压器SST",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "特变2.4MW SST批量应用于欧洲AI数据中心"
+    },
+    {
+      "from": "company:法拉电子:A股:600563",
+      "to": "product:薄膜电容",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "法拉国内唯一批量进入NVIDIA供应链的薄膜电容"
+    },
+    {
+      "from": "company:法拉电子:A股:600563",
+      "to": "company:麦格米特:A股:002851",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "法拉绑定麦格米特电源生态"
+    },
+    {
+      "from": "company:法拉电子:A股:600563",
+      "to": "company:光宝科技",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "法拉绑定光宝电源生态"
+    },
+    {
+      "from": "company:法拉电子:A股:600563",
+      "to": "company:台达电子:美股:DELTA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "法拉薄膜电容切入台达800V HVDC架构"
+    },
+    {
+      "from": "company:三安光电:A股:600703",
+      "to": "material:SiC衬底",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "三安GaN衬底供应商"
+    },
+    {
+      "from": "company:四方股份:A股:601126",
+      "to": "concept:固态变压器SST",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "四方10kV/2.4MW SST转换效率98%+"
+    },
+    {
+      "from": "company:博威合金:A股:601137",
+      "to": "material:高速连接器材料",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "博威AI算力多链条材料布局"
+    },
+    {
+      "from": "company:中国西电:A股:601179",
+      "to": "concept:固态变压器SST",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "中国西电2.4MW SST已落地贵安数据中心"
+    },
+    {
+      "from": "company:禾望电气:A股:603063",
+      "to": "product:HVDC整流柜",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "禾望维谛HVDC架构核心分包商"
+    },
+    {
+      "from": "company:景旺电子:A股:603228",
+      "to": "product:厚铜电源PCB",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "景旺投资50亿元扩产高阶HDI"
+    },
+    {
+      "from": "company:金盘科技:A股:688676",
+      "to": "concept:固态变压器SST",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "金盘10kV/2.4MW SST样机已完成"
+    },
+    {
+      "from": "company:金盘科技:A股:688676",
+      "to": "product:HVDC整流柜",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "金盘HVDC系统成套产品"
+    },
+    {
+      "from": "company:Samsung Electro-Mechanics:韩股:009150",
+      "to": "product:高压MLCC",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "三星电机全球MLCC第二大厂商"
+    },
+    {
+      "from": "company:英诺赛科",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "全球最大8英寸GaN IDM"
+    },
+    {
+      "from": "company:Renesas:日股:6723",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "瑞萨数字电源控制器"
+    },
+    {
+      "from": "company:Rohm:日股:6963",
+      "to": "concept:SiC碳化硅功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "罗姆SiC功率器件"
+    },
+    {
+      "from": "company:Murata:日股:6981",
+      "to": "product:高压MLCC",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "村田全球MLCC龙头"
+    },
+    {
+      "from": "company:光宝科技",
+      "to": "product:AI服务器电源PSU",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "光宝5.5kW-33kW产品已量产"
+    },
+    {
+      "from": "company:Analog Devices:美股:ADI",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "ADI隔离和电源管理器件"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "concept:固态变压器SST",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "台达推出全球首个SST商业化方案"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "product:AI服务器电源PSU",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "台达全球电源管理龙头"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "product:Power Shelf电源架",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "台达110kW Power Shelf已量产"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "company:江海股份:A股:002484",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "江海反向供应台达电解电容"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "company:可立克:A股:002782",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "可立克反向供应台达磁性元件"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "company:英维克:A股:002837",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "英维克反向供应台达液冷组件"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "company:威尔高:A股:301251",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "威尔高反向供应台达PCB"
+    },
+    {
+      "from": "company:台达电子:美股:DELTA",
+      "to": "company:法拉电子:A股:600563",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "法拉反向供应台达薄膜电容"
+    },
+    {
+      "from": "company:Eaton:美股:ETN",
+      "to": "concept:800V HVDC配电架构",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Eaton 2025年发布800V DC参考架构"
+    },
+    {
+      "from": "company:Eaton:美股:ETN",
+      "to": "concept:固态变压器SST",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Eaton 2MW SST样机验证中"
+    },
+    {
+      "from": "company:Infineon:欧洲股市:IFNNY",
+      "to": "concept:SiC碳化硅功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Infineon全球功率半导体龙头"
+    },
+    {
+      "from": "company:Navitas:美股:NVTS",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Navitas GaNFast技术行业领先"
+    },
+    {
+      "from": "company:Navitas:美股:NVTS",
+      "to": "concept:SiC碳化硅功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Navitas GeneSiC SiC产品线"
+    },
+    {
+      "from": "company:ON Semiconductor:美股:ON",
+      "to": "concept:SiC碳化硅功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "ON EliteSiC产品组合"
+    },
+    {
+      "from": "company:STMicroelectronics:欧洲股市:STM",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "ST GaN功率晶体管用于NVIDIA电源板"
+    },
+    {
+      "from": "company:Schneider Electric:欧洲股市:SU.PA",
+      "to": "concept:800V HVDC配电架构",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "施耐德智能配电系统"
+    },
+    {
+      "from": "company:Schneider Electric:欧洲股市:SU.PA",
+      "to": "company:电工合金:A股:300697",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "电工合金是施耐德铜母线核心供应商"
+    },
+    {
+      "from": "company:Texas Instruments:美股:TXN",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "TI GaN功率器件和电源管理芯片"
+    },
+    {
+      "from": "company:Vertiv:美股:VRT",
+      "to": "concept:800V HVDC配电架构",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Vertiv 2026年下半年推出800V DC产品组合"
+    },
+    {
+      "from": "company:Vertiv:美股:VRT",
+      "to": "product:直流母线槽",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Vertiv直流母线槽产品"
+    },
+    {
+      "from": "company:Wolfspeed:美股:WOLF",
+      "to": "concept:SiC碳化硅功率器件",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Wolfspeed全球SiC技术引领者"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "concept:液冷散热系统",
+      "relationType": "benefits",
+      "status": "fact",
+      "note": "高功率密度必须配合液冷"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "GaN用于DC-DC转换环节"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "concept:液冷散热系统",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "800V HVDC+液冷是AI数据中心标配组合"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "concept:SiC碳化硅功率器件",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "SiC是SST和HVDC的核心功率器件"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "concept:固态变压器SST",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "SST是800V HVDC的核心前端设备"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "product:直流母线槽",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "母线槽是800V机房配电干线"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "product:AI服务器电源PSU",
+      "relationType": "downstream",
+      "status": "fact",
+      "note": "PSU将800V转为芯片级低压"
+    },
+    {
+      "from": "concept:800V HVDC配电架构",
+      "to": "concept:巴拿马电源",
+      "relationType": "substitute",
+      "status": "fact",
+      "note": "巴拿马电源是国内过渡方案"
+    },
+    {
+      "from": "concept:GaN氮化镓功率器件",
+      "to": "company:三安光电:A股:600703",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "三安为英诺赛科提供GaN衬底"
+    },
+    {
+      "from": "concept:液冷散热系统",
+      "to": "product:CDU液冷分配单元",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "CDU是液冷系统核心设备"
+    },
+    {
+      "from": "concept:SiC碳化硅功率器件",
+      "to": "material:SiC衬底",
+      "relationType": "upstream",
+      "status": "fact",
+      "note": "SiC衬底是SiC器件的基础材料"
+    },
+    {
+      "from": "concept:固态变压器SST",
+      "to": "concept:SiC碳化硅功率器件",
+      "relationType": "upstream",
+      "status": "fact",
+      "note": "SiC MOSFET是SST的核心开关器件"
+    },
+    {
+      "from": "material:SiC衬底",
+      "to": "company:天岳先进:A股:688234",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "天岳先进8英寸SiC衬底已量产"
+    },
+    {
+      "from": "narrative:800V HVDC AI数据中心电力架构",
+      "to": "concept:800V HVDC配电架构",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "核心配电架构概念"
+    },
+    {
+      "from": "narrative:800V HVDC AI数据中心电力架构",
+      "to": "narrative:AI算力密度驱动",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "算力密度提升是HVDC架构的核心驱动力"
+    },
+    {
+      "from": "narrative:800V HVDC AI数据中心电力架构",
+      "to": "narrative:能效与铜减量化",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "能效提升和铜减量化是HVDC的核心优势"
+    },
+    {
+      "from": "product:AI服务器电源PSU",
+      "to": "product:DC-DC中间总线转换器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "DC-DC是PSU内部核心环节"
+    },
+    {
+      "from": "product:AI服务器电源PSU",
+      "to": "product:薄膜电容",
+      "relationType": "upstream",
+      "status": "fact",
+      "note": "薄膜电容用于HVDC滤波和支撑"
+    },
+    {
+      "from": "product:AI服务器电源PSU",
+      "to": "product:高压MLCC",
+      "relationType": "upstream",
+      "status": "fact",
+      "note": "PSU需要大量MLCC滤波"
+    },
+    {
+      "from": "product:AI服务器电源PSU",
+      "to": "product:厚铜电源PCB",
+      "relationType": "upstream",
+      "status": "fact",
+      "note": "PSU需要厚铜PCB承载大电流"
+    },
+    {
+      "from": "product:DC-DC中间总线转换器",
+      "to": "concept:GaN氮化镓功率器件",
+      "relationType": "upstream",
+      "status": "fact",
+      "note": "GaN用于高频DC-DC转换"
+    }
+  ]
+}

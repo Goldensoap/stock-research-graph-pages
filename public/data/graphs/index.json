@@ -1,10 +1,16 @@
 {
   "graphs": [
     {
-      "id": "ai-server",
-      "label": "AI服务器产业链",
-      "file": "ai-server.json",
-      "summary": "围绕训练和推理服务器展开的静态产研图谱示例。"
+      "id": "cxmt",
+      "label": "长鑫",
+      "file": "cxmt.json",
+      "summary": "长鑫存储（CXMT）DRAM与HBM产业链及A股关联企业图谱，覆盖电化学耗材、光刻胶、前驱体、设备（细分刻蚀/沉积/CMP/清洗/离子注入/量测/测试/零部件）、封测、工程、模组与股权环节。"
+    },
+    {
+      "id": "800v-hvdc-ai",
+      "label": "800V HVDC AI数据中心电力架构产业图谱",
+      "file": "800v-hvdc-ai.json",
+      "summary": "围绕NVIDIA 800V HVDC与华为AI数据中心高压直流配电架构的全产业链拆解，涵盖从原材料、功率半导体、固态变压器、电气总包、电源模块、PCB、被动元件到液冷系统的完整供应链关系。"
     }
   ]
 }

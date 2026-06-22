@@ -1,0 +1,1858 @@
+{
+  "schemaVersion": 2,
+  "kind": "stock-research-graph.authoring",
+  "graph": {
+    "label": "长鑫",
+    "summary": "长鑫存储（CXMT）DRAM与HBM产业链及A股关联企业图谱，覆盖电化学耗材、光刻胶、前驱体、设备（细分刻蚀/沉积/CMP/清洗/离子注入/量测/测试/零部件）、封测、工程、模组与股权环节。",
+    "sortOrder": 30
+  },
+  "lanes": [
+    {
+      "label": "核心企业",
+      "color": "#1e293b",
+      "order": 5
+    },
+    {
+      "label": "原材料",
+      "color": "#2563eb",
+      "order": 10
+    },
+    {
+      "label": "半导体设备",
+      "color": "#eb2424",
+      "order": 20
+    },
+    {
+      "label": "制造与封测",
+      "color": "#7c3aed",
+      "order": 30
+    },
+    {
+      "label": "模组集成",
+      "color": "#0f766e",
+      "order": 40
+    },
+    {
+      "label": "终端应用",
+      "color": "#24eb45",
+      "order": 50
+    },
+    {
+      "label": "股权关联",
+      "color": "#ea580c",
+      "order": 60
+    }
+  ],
+  "nodes": [
+    {
+      "type": "narrative",
+      "label": "长鑫产业链",
+      "weightTier": "high",
+      "order": 10,
+      "summary": "长鑫存储是国内唯一实现DRAM规模化量产的IDM企业，产能全球第四，正处于IPO与大幅扩产关键期。"
+    },
+    {
+      "type": "company",
+      "label": "长鑫科技",
+      "weightTier": "high",
+      "order": 20,
+      "lane": "核心企业",
+      "summary": "国内唯一DRAM自主设计+量产IDM，合肥/北京3座12英寸厂，2026年末月产能预计30万片，覆盖DDR4/5、LPDDR4X/5/5X及HBM3。"
+    },
+    {
+      "type": "industry",
+      "label": "电子化学品",
+      "weightTier": "high",
+      "order": 30,
+      "lane": "原材料",
+      "summary": "DRAM/HBM制造中用量最大的耗材类别之一，占晶圆制造成本约7%-10%，包括湿电子化学品、光刻胶、电镀液、CMP材料等。"
+    },
+    {
+      "type": "industry",
+      "label": "半导体设备",
+      "weightTier": "high",
+      "order": 40,
+      "lane": "半导体设备",
+      "summary": "长鑫扩产带动50-60亿美元设备需求，刻蚀、薄膜沉积、CMP、清洗、量测、测试、零部件设备为核心。国产设备占比约45%。"
+    },
+    {
+      "type": "industry",
+      "label": "存储封测",
+      "weightTier": "high",
+      "order": 50,
+      "lane": "制造与封测",
+      "summary": "长鑫以自主测试为主，委外封装为辅，HBM封装为新增重点。"
+    },
+    {
+      "type": "industry",
+      "label": "存储模组",
+      "weightTier": "medium",
+      "order": 60,
+      "lane": "模组集成",
+      "summary": "基于长鑫DRAM颗粒的模组制造与品牌销售。"
+    },
+    {
+      "type": "material",
+      "label": "前驱体",
+      "weightTier": "high",
+      "order": 70,
+      "lane": "原材料",
+      "summary": "ALD/CVD工艺用气态或液态化学原料，用于沉积DRAM电容高K介质、电极、HBM TSV阻挡层等。纯度要求<1ppb。"
+    },
+    {
+      "type": "material",
+      "label": "光刻胶",
+      "weightTier": "high",
+      "order": 80,
+      "lane": "原材料",
+      "summary": "晶圆表面曝光显影形成电路图案，DRAM/HBM每层金属/介质图形化必需，20-40次光刻步骤。"
+    },
+    {
+      "type": "material",
+      "label": "ArF光刻胶",
+      "weightTier": "high",
+      "order": 90,
+      "lane": "原材料",
+      "summary": "193nm浸没式光刻胶，用于DRAM 17nm及以下先进节点，国产化率不足2%，被JSR/TOK/信越垄断。"
+    },
+    {
+      "type": "material",
+      "label": "KrF光刻胶",
+      "weightTier": "medium",
+      "order": 100,
+      "lane": "原材料",
+      "summary": "248nm光刻胶，用于DRAM成熟节点及HBM封装RDL等，国产化率约5%。"
+    },
+    {
+      "type": "material",
+      "label": "CMP抛光垫",
+      "weightTier": "high",
+      "order": 110,
+      "lane": "原材料",
+      "summary": "DRAM/HBM铜/钨/氧化硅平坦化必需，HBM TSV背面露头也需CMP。美国杜邦占全球75%+。"
+    },
+    {
+      "type": "material",
+      "label": "CMP抛光液",
+      "weightTier": "high",
+      "order": 120,
+      "lane": "原材料",
+      "summary": "DRAM/HBM各层金属/介质层平坦化，HBM TSV背面CMP专用。核心壁垒为纳米磨料与配方。"
+    },
+    {
+      "type": "material",
+      "label": "TSV电镀铜添加剂",
+      "weightTier": "high",
+      "order": 130,
+      "lane": "原材料",
+      "summary": "HBM 3D堆叠中硅通孔铜填充电镀核心材料，TSV是HBM成本占比最高单一工艺（约30%），填孔质量决定堆叠良率。"
+    },
+    {
+      "type": "material",
+      "label": "大马士革铜互连电镀液",
+      "weightTier": "high",
+      "order": 140,
+      "lane": "原材料",
+      "summary": "DRAM前道晶圆制造铜互连（Damascene工艺）沟槽/通孔填充，长鑫17nm及以下节点必备。"
+    },
+    {
+      "type": "material",
+      "label": "高选择比湿法刻蚀液",
+      "weightTier": "medium",
+      "order": 150,
+      "lane": "原材料",
+      "summary": "DRAM制造中氮化硅/氧化硅/金属层选择性刻蚀，高选择比磷酸用于层间刻蚀。"
+    },
+    {
+      "type": "material",
+      "label": "干法刻蚀后清洗液",
+      "weightTier": "medium",
+      "order": 160,
+      "lane": "原材料",
+      "summary": "干法刻蚀/灰化后去除晶圆表面无机物、光刻胶残留、金属杂质，约占芯片制造工序30%。"
+    },
+    {
+      "type": "material",
+      "label": "电子特气",
+      "weightTier": "medium",
+      "order": 170,
+      "lane": "原材料",
+      "summary": "光刻气（KrF/ArF/EUV用）、刻蚀气（NF3/CF4/SF6）、掺杂气（磷烷/砷烷），纯度要求6N-9N。"
+    },
+    {
+      "type": "material",
+      "label": "硅片",
+      "weightTier": "medium",
+      "order": 180,
+      "lane": "原材料",
+      "summary": "12英寸晶圆基底材料，长鑫3座12英寸厂月产能30万片对应巨大硅片需求。"
+    },
+    {
+      "type": "material",
+      "label": "靶材",
+      "weightTier": "low",
+      "order": 190,
+      "lane": "原材料",
+      "summary": "铜/钽/钛等金属靶材，用于PVD物理气相沉积形成阻挡层/种子层。"
+    },
+    {
+      "type": "company",
+      "label": "雅克科技",
+      "weightTier": "high",
+      "order": 200,
+      "lane": "原材料",
+      "summary": "国内前驱体龙头（收购韩国UP Chemical），纯度<1ppb，长鑫Baseline级核心供应商，国内前驱体市占率约40%。",
+      "ticker": "002409",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "南大光电",
+      "weightTier": "high",
+      "order": 210,
+      "lane": "原材料",
+      "summary": "国产ArF光刻胶首批量产企业之一（28nm），500吨产能；6N掺杂气（磷烷/砷烷）国内龙头。已进入长鑫验证/供应链。",
+      "ticker": "300346",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "彤程新材",
+      "weightTier": "medium",
+      "order": 220,
+      "lane": "原材料",
+      "summary": "KrF光刻胶市占率国内第一，ArF湿法胶量产推进中，长鑫光刻胶供应商。",
+      "ticker": "603650",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "晶瑞电材",
+      "weightTier": "medium",
+      "order": 230,
+      "lane": "原材料",
+      "summary": "G5级双氧水国内第一大（市占率约40%），显影液/剥离液已向长鑫供货；ArF/KrF光刻胶验证中。",
+      "ticker": "300655",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "上海新阳",
+      "weightTier": "high",
+      "order": 240,
+      "lane": "原材料",
+      "summary": "国内电镀液+清洗液双龙头。大马士革/TSV/Bumping电镀液覆盖90-14nm；高选择比蚀刻液14nm量产；干法刻蚀后清洗液国内第一。",
+      "ticker": "300236",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "兴福电子",
+      "weightTier": "medium",
+      "order": 250,
+      "lane": "原材料",
+      "summary": "高选择比磷酸、硅/铝刻蚀液等，荣获长鑫科技集团供应商质量奖，G5级磷酸全球龙头。",
+      "ticker": "688545",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "天承科技",
+      "weightTier": "high",
+      "order": 260,
+      "lane": "原材料",
+      "summary": "TSV/RDL/Bumping电镀铜添加剂已研发完成，正全力为头部存储客户提供解决方案，长鑫为其核心客户。",
+      "ticker": "688603",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "安集科技",
+      "weightTier": "high",
+      "order": 270,
+      "lane": "原材料",
+      "summary": "国内CMP抛光液绝对龙头，全球市占率13%，长鑫核心供应商，17nm已量产，毛利率约58%。",
+      "ticker": "688019",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "鼎龙股份",
+      "weightTier": "high",
+      "order": 280,
+      "lane": "原材料",
+      "summary": "国内唯一全流程自主CMP抛光垫供应商，28nm量产，月产能60万片/年，已通过长鑫存储认证并批量供货；CMP抛光液进入验证。封装PI、临时键合胶等先进封装材料配套HBM堆叠工艺，2024年首获订单。",
+      "ticker": "300054",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "江化微",
+      "weightTier": "medium",
+      "order": 290,
+      "lane": "原材料",
+      "summary": "全品类湿电子化学品覆盖，显影液/剥离液/清洗液等已进入长鑫供应链。",
+      "ticker": "603078",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "艾森股份",
+      "weightTier": "medium",
+      "order": 300,
+      "lane": "原材料",
+      "summary": "TSV电镀添加剂处于客户端测试验证；14nm大马士革镀铜添加剂中试阶段；光刻胶配套试剂已批量供应长电/华天等封测龙头。",
+      "ticker": "688720",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "华特气体",
+      "weightTier": "medium",
+      "order": 310,
+      "lane": "原材料",
+      "summary": "国内唯一一家多款稀混光刻气同时通过荷兰ASML和日本GIGAPHOTON认证的气体企业，光刻气市占率60%，2款产品进入5nm制程，已进入长鑫供应链。",
+      "ticker": "688268",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "中船特气",
+      "weightTier": "medium",
+      "order": 320,
+      "lane": "原材料",
+      "summary": "三氟化氮（5N纯度）、六氟化钨（6N纯度）等电子特气龙头，长鑫/长江存储为核心客户。",
+      "ticker": "688146",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "沪硅产业",
+      "weightTier": "medium",
+      "order": 330,
+      "lane": "原材料",
+      "summary": "12英寸半导体硅片国内龙头，长鑫晶圆制造核心原材料供应商。",
+      "ticker": "688126",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "江丰电子",
+      "weightTier": "low",
+      "order": 340,
+      "lane": "原材料",
+      "summary": "高纯铜/钽/钛靶材供应商，用于PVD阻挡层/种子层，长鑫靶材供应商。",
+      "ticker": "300666",
+      "market": "A股"
+    },
+    {
+      "type": "concept",
+      "label": "刻蚀设备",
+      "weightTier": "high",
+      "order": 350,
+      "lane": "半导体设备",
+      "summary": "晶圆制造核心设备之一，占设备总投资约20%，用于DRAM/HBM图形化刻蚀，包括CCP/ICP/TSV深孔刻蚀。"
+    },
+    {
+      "type": "concept",
+      "label": "薄膜沉积设备",
+      "weightTier": "high",
+      "order": 360,
+      "lane": "半导体设备",
+      "summary": "占设备总投资约20%，包括PECVD/SACVD/ALD/PVD等，用于DRAM电容介质、电极、HBM TSV绝缘层/阻挡层沉积。"
+    },
+    {
+      "type": "concept",
+      "label": "CMP设备",
+      "weightTier": "high",
+      "order": 370,
+      "lane": "半导体设备",
+      "summary": "化学机械抛光设备，用于DRAM/HBM各层平坦化，HBM TSV背面露头必需。"
+    },
+    {
+      "type": "concept",
+      "label": "清洗设备",
+      "weightTier": "medium",
+      "order": 380,
+      "lane": "半导体设备",
+      "summary": "前后道清洗设备，约占芯片制造工序30%，包括单片/槽式/刷片清洗。"
+    },
+    {
+      "type": "concept",
+      "label": "离子注入设备",
+      "weightTier": "medium",
+      "order": 390,
+      "lane": "半导体设备",
+      "summary": "用于DRAM晶体管掺杂工艺，低能大束流/高能离子注入机为核心。"
+    },
+    {
+      "type": "concept",
+      "label": "量测检测设备",
+      "weightTier": "medium",
+      "order": 400,
+      "lane": "半导体设备",
+      "summary": "前道缺陷检测、膜厚/关键尺寸量测、电子束复查等，HBM3检测为新增需求。"
+    },
+    {
+      "type": "concept",
+      "label": "测试设备",
+      "weightTier": "medium",
+      "order": 410,
+      "lane": "半导体设备",
+      "summary": "后道测试机、分选机、探针台，覆盖DRAM颗粒/晶圆测试。"
+    },
+    {
+      "type": "concept",
+      "label": "零部件及辅助设备",
+      "weightTier": "medium",
+      "order": 420,
+      "lane": "半导体设备",
+      "summary": "高纯气体输送系统（GDS）、温控设备、废气处理设备、晶圆传片设备、精密零部件等。"
+    },
+    {
+      "type": "company",
+      "label": "北方华创",
+      "weightTier": "high",
+      "order": 430,
+      "lane": "半导体设备",
+      "summary": "国内半导体设备平台型龙头，覆盖刻蚀、PVD/CVD/ALD、热处理、清洗等7大类设备，12英寸TSV刻蚀设备为国内TSV量产生产线主力机台，装机量超百腔，市占率领先。长鑫扩产核心设备供应商。",
+      "ticker": "002371",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "中微公司",
+      "weightTier": "high",
+      "order": 440,
+      "lane": "半导体设备",
+      "summary": "CCP/ICP刻蚀设备国际一流，5nm通过台积电验证；TSV深孔刻蚀设备用于HBM堆叠；ALD设备已进入市场并获得重复订单，是国产ALD设备的重要供应商之一。等离子体刻蚀设备进入长鑫产线。",
+      "ticker": "688012",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "拓荆科技",
+      "weightTier": "high",
+      "order": 450,
+      "lane": "半导体设备",
+      "summary": "国内唯一产业化PECVD/SACVD设备厂商，ALD领先，适配19/17nm DRAM及HBM介质层沉积，批量导入长鑫产线。",
+      "ticker": "688072",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "微导纳米",
+      "weightTier": "medium",
+      "order": 460,
+      "lane": "半导体设备",
+      "summary": "ALD原子层沉积设备应用于长鑫存储DRAM产线，薄膜均匀性±1%，获大基金二期投资。",
+      "ticker": "688147",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "华海清科",
+      "weightTier": "high",
+      "order": 470,
+      "lane": "半导体设备",
+      "summary": "国内CMP设备龙头，在长鑫产线占据重要份额，18英寸设备研发完成，减薄机切入HBM封装供应链。",
+      "ticker": "688120",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "盛美上海",
+      "weightTier": "medium",
+      "order": 480,
+      "lane": "半导体设备",
+      "summary": "湿法清洗设备国内龙头，SAPS/TEBO技术独特，单片/槽式清洗设备已进入长鑫供应链；拓展电镀/炉管/PECVD业务。",
+      "ticker": "688082",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "万业企业",
+      "weightTier": "medium",
+      "order": 490,
+      "lane": "半导体设备",
+      "summary": "旗下凯世通为国内首家12英寸集成电路大束流和高能离子注入机获得验证验收的国产供应商，低能大束流设备已获长鑫存储订单。",
+      "ticker": "600641",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "精测电子",
+      "weightTier": "medium",
+      "order": 500,
+      "lane": "半导体设备",
+      "summary": "半导体量测检测设备，HBM3检测设备已获小批量订单，膜厚/关键尺寸量测设备进入长鑫验证。",
+      "ticker": "300567",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "中科飞测",
+      "weightTier": "medium",
+      "order": 510,
+      "lane": "半导体设备",
+      "summary": "无图形/图形晶圆缺陷检测量测设备，无图形检测市占率70%，进入长鑫产线验证。",
+      "ticker": "688361",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "长川科技",
+      "weightTier": "medium",
+      "order": 520,
+      "lane": "半导体设备",
+      "summary": "国产测试设备龙头，覆盖测试机、分选机、探针台、AOI检测设备，数字测试机覆盖DRAM测试需求。",
+      "ticker": "300604",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "精智达",
+      "weightTier": "medium",
+      "order": 530,
+      "lane": "半导体设备",
+      "summary": "存储测试设备加速进入长鑫供应链，DRAM颗粒测试设备国产替代。",
+      "ticker": "688627",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "富创精密",
+      "weightTier": "medium",
+      "order": 540,
+      "lane": "半导体设备",
+      "summary": "半导体设备精密零部件供应商，受益长鑫扩产带来的设备国产化需求。",
+      "ticker": "688409",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "正帆科技",
+      "weightTier": "medium",
+      "order": 550,
+      "lane": "半导体设备",
+      "summary": "长鑫存储高纯气体GDS系统核心供应商之一，贯穿建厂+日常运营；对长鑫有早期投资；收购汉京半导体拓展石英/碳化硅陶瓷零部件。",
+      "ticker": "688596",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "京仪装备",
+      "weightTier": "medium",
+      "order": 560,
+      "lane": "半导体设备",
+      "summary": "半导体专用温控设备（-70℃~120℃，精度±0.05℃）和工艺废气处理设备国内龙头，长鑫/长江存储/中芯国际核心供应商。",
+      "ticker": "688652",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "深科技",
+      "weightTier": "high",
+      "order": 570,
+      "lane": "制造与封测",
+      "summary": "长鑫最大委外封测供应商（承接60%+封测订单），沛顿科技完成HBM3封装工艺开发，支持17nm及以下先进制程。",
+      "ticker": "000021",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "长电科技",
+      "weightTier": "high",
+      "order": 580,
+      "lane": "制造与封测",
+      "summary": "全球第三大封测厂，XDFOI 2.5D/3D封装技术支持HBM封装，长鑫封测合作伙伴。",
+      "ticker": "600584",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "通富微电",
+      "weightTier": "medium",
+      "order": 590,
+      "lane": "制造与封测",
+      "summary": "全球第四大封测厂，HBM2封装布局传闻，TSV/Bumping能力完备，布局2.5D封装，但公司未公告确认具体HBM试产进度。长鑫HBM潜在封测伙伴。",
+      "ticker": "002156",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "华天科技",
+      "weightTier": "medium",
+      "order": 600,
+      "lane": "制造与封测",
+      "summary": "国内头部封测企业，为长鑫提供封装测试服务，TSV/Bumping能力完备。",
+      "ticker": "002185",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "太极实业",
+      "weightTier": "high",
+      "order": 610,
+      "lane": "制造与封测",
+      "summary": "全资子公司太极半导体为长鑫提供DRAM/LPDDR4封测服务；控股子公司十一科技承建长鑫新桥12英寸晶圆厂二期EPC工程。海太半导体绑定SK海力士，不涉及HBM。",
+      "ticker": "600667",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "江波龙",
+      "weightTier": "high",
+      "order": 620,
+      "lane": "模组集成",
+      "summary": "基于长鑫DRAM颗粒推出FORESEE品牌存储模组，企业级存储收入同比增180%，长鑫模组核心合作伙伴。",
+      "ticker": "301308",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "朗科科技",
+      "weightTier": "medium",
+      "order": 630,
+      "lane": "模组集成",
+      "summary": "存储模组制造商，参与长鑫DRAM颗粒的模组集成与品牌销售。",
+      "ticker": "300042",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "佰维存储",
+      "weightTier": "medium",
+      "order": 640,
+      "lane": "模组集成",
+      "summary": "存储模组与存算一体封装，储备HBM Chiplet技术，基于长鑫颗粒的模组产品。",
+      "ticker": "688525",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "浪潮信息",
+      "weightTier": "high",
+      "order": 650,
+      "lane": "终端应用",
+      "summary": "国内服务器龙头，搭载长鑫DRAM的企业级内存条用于数据中心/云计算服务器。",
+      "ticker": "000977",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "传音控股",
+      "weightTier": "medium",
+      "order": 660,
+      "lane": "终端应用",
+      "summary": "智能手机厂商，旗下机型搭载长鑫LPDDR5芯片，是长鑫移动端DRAM重要终端客户。",
+      "ticker": "688036",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "兆易创新",
+      "weightTier": "high",
+      "order": 670,
+      "lane": "股权关联",
+      "summary": "直接持股长鑫约1.80%，为A股第一大产业资本股东；DRAM产品由长鑫独家代工，2025年关联交易预计11.61亿元，业务深度绑定。",
+      "ticker": "603986",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "合肥城建",
+      "weightTier": "medium",
+      "order": 680,
+      "lane": "股权关联",
+      "summary": "母公司合肥建投为长鑫重要股东，通过基金间接参与长鑫存储投资。",
+      "ticker": "002208",
+      "market": "A股"
+    },
+    {
+      "type": "material",
+      "label": "封装基板",
+      "weightTier": "high",
+      "order": 690,
+      "lane": "制造与封测",
+      "summary": "HBM存储堆叠必需的高端封装基板，包括ABF载板（FC-BGA）和BT载板（FC-CSP），用于承载HBM芯片与GPU/CPU的互联。国产化率极低，深南电路、兴森科技为国产双龙头。"
+    },
+    {
+      "type": "material",
+      "label": "GMC颗粒环氧塑封料",
+      "weightTier": "high",
+      "order": 700,
+      "lane": "原材料",
+      "summary": "HBM堆叠封装专用颗粒环氧塑封料（Granular Molding Compound），用于填充DRAM芯片堆叠间隙，需配合Low-α球形硅微粉/氧化铝填料解决高堆叠散热与软错误问题。华海诚科为国内唯一能量产HBM专用GMC的企业。"
+    },
+    {
+      "type": "material",
+      "label": "GMC填料",
+      "weightTier": "high",
+      "order": 710,
+      "lane": "原材料",
+      "summary": "HBM封装GMC颗粒环氧塑封料核心导热填充原料，包括Low-α球形硅微粉（控制α射线防止软错误）和球形氧化铝（导热）。国产化率较低，联瑞新材、壹石通为核心供应商。"
+    },
+    {
+      "type": "material",
+      "label": "高频高速树脂",
+      "weightTier": "medium",
+      "order": 720,
+      "lane": "原材料",
+      "summary": "HBM配套高速PCB与先进封装载板用特种树脂，包括M8-M9级碳氢树脂、BMI双马树脂、PPO聚苯醚等。打破美日垄断，圣泉集团、东材科技为国产龙头。"
+    },
+    {
+      "type": "material",
+      "label": "先进封装胶",
+      "weightTier": "medium",
+      "order": 730,
+      "lane": "原材料",
+      "summary": "HBM/Chiplet先进封装用胶粘材料，包括临时键合胶（TBA，晶圆减薄保护）、底部填充胶（Underfill，芯片底部填充）、DAF膜（Die Attach Film，芯片粘接）等。"
+    },
+    {
+      "type": "concept",
+      "label": "半导体掩膜版",
+      "weightTier": "medium",
+      "order": 740,
+      "lane": "半导体设备",
+      "summary": "晶圆制造光刻工序必需的核心工具，用于将电路图形转移到晶圆上。DRAM/HBM制造需要180nm-28nm多节点掩膜版。国产化率不足10%，清溢光电、路维光电、龙图光罩为国产主力。"
+    },
+    {
+      "type": "concept",
+      "label": "存储探针卡",
+      "weightTier": "medium",
+      "order": 750,
+      "lane": "半导体设备",
+      "summary": "DRAM/HBM晶圆测试（CP测试）核心接口部件，HBM测试频次是DRAM的5-8倍，探针卡单价50-100万美元。和林微纳、强一股份为国产龙头。"
+    },
+    {
+      "type": "company",
+      "label": "深南电路",
+      "weightTier": "high",
+      "order": 760,
+      "lane": "制造与封测",
+      "summary": "内资PCB龙头+封装基板核心供应商，全球PCB营收第4。封装基板产品覆盖存储类（eMMC/FC-CSP）、MEMS、RF等，BT基板已通过长江存储、长鑫存储等头部客户认证。FC-BGA封装基板（ABF/BT）适配HBM存储堆叠，22~26层产品进入打样阶段。",
+      "ticker": "002916",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "兴森科技",
+      "weightTier": "high",
+      "order": 770,
+      "lane": "制造与封测",
+      "summary": "国内PCB样板龙头，国内唯一同时布局ABF载板+BT载板。FCBGA封装基板（ABF）处于小批量生产阶段，低层板良率超95%；BT载板聚焦存储/射频，适配DDR5/HBM存储封装。客户覆盖长江存储、长鑫、华为等。",
+      "ticker": "002436",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "华正新材",
+      "weightTier": "medium",
+      "order": 780,
+      "lane": "原材料",
+      "summary": "国产CBF积层绝缘膜（味之素ABF膜替代）核心供应商，已进入华为昇腾/麒麟认证批量供货。M9级覆铜板材料覆盖高端服务器/存储领域。",
+      "ticker": "603186",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "生益科技",
+      "weightTier": "medium",
+      "order": 790,
+      "lane": "原材料",
+      "summary": "国内高端覆铜板龙头，ABF膜材料研发中，产品通过台光等覆铜板厂商间接配套高端服务器/存储PCB。",
+      "ticker": "600183",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "博敏电子",
+      "weightTier": "medium",
+      "order": 800,
+      "lane": "制造与封测",
+      "summary": "江苏博敏二期IC封装载板产品线聚焦存储类封装基板，产能释放中。",
+      "ticker": "603936",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "华海诚科",
+      "weightTier": "high",
+      "order": 810,
+      "lane": "原材料",
+      "summary": "国内唯一能量产HBM专用GMC颗粒环氧塑封料（全球唯三通过认证），EMG-700系列已通过长鑫存储验证。收购衡所华威后GMC年产能2.5万吨。",
+      "ticker": "688535",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "联瑞新材",
+      "weightTier": "high",
+      "order": 820,
+      "lane": "原材料",
+      "summary": "国内电子级硅微粉龙头，Low-α球形硅微粉与球形氧化铝是HBM封装GMC颗粒塑封料核心导热填充原料。通过全球知名GMC厂商（日韩为主）间接配套HBM产业链，全球Low-α球硅市占率约30%。",
+      "ticker": "688300",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "壹石通",
+      "weightTier": "medium",
+      "order": 830,
+      "lane": "原材料",
+      "summary": "Low-α球形氧化铝核心供应商，配套HBM封装GMC所用球铝，导热系数30W/m·K。已导入三星/海力士封装厂，2024年投产200吨/年Low-α产线。",
+      "ticker": "688733",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "圣泉集团",
+      "weightTier": "medium",
+      "order": 840,
+      "lane": "原材料",
+      "summary": "合成树脂龙头，M8-M9级碳氢树脂及改性聚苯醚已量产，打破美日垄断。M9级碳氢树脂通过客户认证并小批量出货，供应生益科技、胜宏科技等覆铜板厂商。",
+      "ticker": "605589",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "东材科技",
+      "weightTier": "medium",
+      "order": 850,
+      "lane": "原材料",
+      "summary": "双马树脂（BMI）、活性酯固化剂、M9碳氢树脂等绝缘材料供应商，产品通过台光、生益科技等覆铜板厂商间接配套高端服务器/存储PCB。千吨级规模化产能。",
+      "ticker": "601208",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "飞凯材料",
+      "weightTier": "medium",
+      "order": 860,
+      "lane": "原材料",
+      "summary": "开发临时键合胶（验证导入阶段），已量产EMC环氧塑封料、锡球等功能型湿电子化学品，可用于HBM等先进封装。整套临时键合解决方案支持热/机械/激光拆解。",
+      "ticker": "300398",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "德邦科技",
+      "weightTier": "medium",
+      "order": 870,
+      "lane": "原材料",
+      "summary": "导热界面材料/底部填充胶/DAF膜/UV膜供应商，产品覆盖晶圆加工到芯片级封装全流程。晶圆UV膜、固晶材料、导热界面材料已批量供货长电/通富/华天；DAF膜稳定批量出货。收购泰吉诺拓展高端TIM。",
+      "ticker": "688035",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "回天新材",
+      "weightTier": "low",
+      "order": 880,
+      "lane": "原材料",
+      "summary": "芯片四角绑定胶、芯片底部填充胶(Underfill)、SIP屏蔽银浆等封装用胶供应商，在华为等标杆客户测试通过并批量使用。HBM/Chiplet用胶处于送样测试。",
+      "ticker": "300041",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "清溢光电",
+      "weightTier": "medium",
+      "order": 890,
+      "lane": "半导体设备",
+      "summary": "半导体掩膜版国内龙头，180nm量产，150nm小规模量产，推进130-65nm PSM/OPC。佛山基地（35亿投资）聚焦250-65nm。客户覆盖芯联集成、中芯国际等。",
+      "ticker": "688138",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "路维光电",
+      "weightTier": "medium",
+      "order": 900,
+      "lane": "半导体设备",
+      "summary": "半导体掩膜版180nm量产，投资路芯半导体（20亿）计划2025年量产45nm、2026年量产28nm。G11大尺寸国内唯一。客户覆盖新凯来、中芯宁波、长电科技、通富微电等。",
+      "ticker": "688401",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "龙图光罩",
+      "weightTier": "medium",
+      "order": 910,
+      "lane": "半导体设备",
+      "summary": "半导体掩膜版90nm量产，65nm送样验证，珠海高端基地推进65nm/40nm。全球排名第六（2025年）。客户覆盖中芯集成、士兰微、华虹半导体等。",
+      "ticker": "688721",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "冠石科技",
+      "weightTier": "low",
+      "order": 920,
+      "lane": "半导体设备",
+      "summary": "半导体掩膜版55nm产品交付，40nm产线通线。宁波项目计划2025年量产45nm，2028年量产28nm。",
+      "ticker": "605588",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "菲利华",
+      "weightTier": "low",
+      "order": 930,
+      "lane": "原材料",
+      "summary": "国内首家G8代大尺寸光掩膜版基材，国内唯一可生产大规格光掩膜基板。半导体掩膜版上游材料核心供应商。",
+      "ticker": "300395",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "和林微纳",
+      "weightTier": "medium",
+      "order": 940,
+      "lane": "半导体设备",
+      "summary": "MEMS探针/探针卡国内高端细分龙头，2024年市占率约18%，高端MEMS探针卡细分市占率约25%。CP端探针卡样品进入部分客户验证，应用于存储芯片测试。",
+      "ticker": "688661",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "强一股份",
+      "weightTier": "medium",
+      "order": 950,
+      "lane": "半导体设备",
+      "summary": "全球探针卡厂商排名第6（2025年），MEMS探针卡排名第5。向长江存储出货（NAND Flash），通过'长存擂台赛'认证。完成多片面向Flash、DRAM测试用探针卡小批量出货，3D MEMS探针卡预研中（可覆盖HBM测试）。",
+      "ticker": "688809",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "广钢气体",
+      "weightTier": "medium",
+      "order": 960,
+      "lane": "原材料",
+      "summary": "与长鑫合肥二期签订15年供气协议，电子级氨等新兴材料核心供应商。",
+      "ticker": "688548",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "金宏气体",
+      "weightTier": "medium",
+      "order": 970,
+      "lane": "原材料",
+      "summary": "6N级高纯氦气及电子特气供应商，主要供应台积电、长鑫存储等半导体企业，自建液氦存储设施。",
+      "ticker": "688106",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "商络电子",
+      "weightTier": "medium",
+      "order": 980,
+      "lane": "模组集成",
+      "summary": "长鑫存储前五大代理商/分销商之一，2025年Q2长鑫产品收入占比35%，AI服务器DRAM模组分销核心渠道。",
+      "ticker": "300975",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "沃格光电",
+      "weightTier": "low",
+      "order": 990,
+      "lane": "制造与封测",
+      "summary": "国内稀缺玻璃基板/TGV产能，TGV玻璃封装载板获大厂订单，用于3D Chiplet封装，是HBM/先进封装潜在基板替代方案。",
+      "ticker": "603773",
+      "market": "A股"
+    },
+    {
+      "type": "company",
+      "label": "神工股份",
+      "weightTier": "low",
+      "order": 1000,
+      "lane": "原材料",
+      "summary": "大直径硅材料+硅零部件供应商，硅零部件进入长江存储、北方华创等，是三星等核心存储厂商刻蚀零部件源头供应商。",
+      "ticker": "688233",
+      "market": "A股"
+    }
+  ],
+  "edges": [
+    {
+      "from": "company:长鑫科技",
+      "to": "company:深科技:A股:000021",
+      "relationType": "downstream",
+      "status": "fact",
+      "note": "最大委外封测供应商（60%+外发订单）"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:深南电路:A股:002916",
+      "relationType": "downstream",
+      "status": "research",
+      "note": "BT基板已通过长鑫存储认证"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:商络电子:A股:300975",
+      "relationType": "downstream",
+      "status": "research",
+      "note": "前五大代理商"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:金宏气体:A股:688106",
+      "relationType": "downstream",
+      "status": "research",
+      "note": "电子特气供应长鑫"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:华海诚科:A股:688535",
+      "relationType": "downstream",
+      "status": "research",
+      "note": "GMC塑封料通过长鑫存储验证"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:广钢气体:A股:688548",
+      "relationType": "downstream",
+      "status": "research",
+      "note": "合肥二期15年供气协议"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:精智达:A股:688627",
+      "relationType": "downstream",
+      "status": "research",
+      "note": "DRAM测试设备核心配套，HBM3检测设备小批量订单"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "industry:存储封测",
+      "relationType": "downstream",
+      "status": "fact",
+      "note": "晶圆制造后进入封测环节"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "industry:存储模组",
+      "relationType": "downstream",
+      "status": "fact",
+      "note": "颗粒通过模组厂集成"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:合肥城建:A股:002208",
+      "relationType": "exposure",
+      "status": "fact",
+      "note": "母公司合肥建投为长鑫重要股东，通过基金间接参与投资"
+    },
+    {
+      "from": "company:长鑫科技",
+      "to": "company:兆易创新:A股:603986",
+      "relationType": "exposure",
+      "status": "fact",
+      "note": "直接持股1.88%，DRAM产品由长鑫独家代工，2025年关联交易预计11.61亿元"
+    },
+    {
+      "from": "concept:CMP设备",
+      "to": "company:华海清科:A股:688120",
+      "relationType": "contains",
+      "status": "research",
+      "note": "CMP设备国内龙头，长鑫产线市占率超60%，18英寸设备研发完成，减薄机切入HBM封装"
+    },
+    {
+      "from": "concept:测试设备",
+      "to": "company:长川科技:A股:300604",
+      "relationType": "contains",
+      "status": "research",
+      "note": "测试机/分选机/探针台/AOI全覆盖，数字测试机覆盖DRAM测试需求"
+    },
+    {
+      "from": "concept:测试设备",
+      "to": "company:精智达:A股:688627",
+      "relationType": "contains",
+      "status": "research",
+      "note": "存储测试设备加速进入长鑫供应链，DRAM颗粒测试设备国产替代"
+    },
+    {
+      "from": "concept:测试设备",
+      "to": "company:和林微纳:A股:688661",
+      "relationType": "contains",
+      "status": "research",
+      "note": "MEMS探针卡应用于存储芯片测试"
+    },
+    {
+      "from": "concept:测试设备",
+      "to": "company:强一股份:A股:688809",
+      "relationType": "contains",
+      "status": "research",
+      "note": "DRAM/Flash探针卡小批量出货"
+    },
+    {
+      "from": "concept:测试设备",
+      "to": "concept:存储探针卡",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "DRAM/HBM晶圆测试核心接口"
+    },
+    {
+      "from": "concept:清洗设备",
+      "to": "company:北方华创:A股:002371",
+      "relationType": "contains",
+      "status": "research",
+      "note": "覆盖刻蚀、薄膜沉积、热处理、清洗领域，平台型龙头"
+    },
+    {
+      "from": "concept:清洗设备",
+      "to": "company:盛美上海:A股:688082",
+      "relationType": "contains",
+      "status": "research",
+      "note": "湿法清洗设备国内龙头，SAPS/TEBO技术独特，单片/槽式清洗设备已进入长鑫供应链"
+    },
+    {
+      "from": "concept:存储探针卡",
+      "to": "company:和林微纳:A股:688661",
+      "relationType": "contains",
+      "status": "research",
+      "note": "MEMS探针卡高端细分国内第一"
+    },
+    {
+      "from": "concept:存储探针卡",
+      "to": "company:强一股份:A股:688809",
+      "relationType": "contains",
+      "status": "research",
+      "note": "全球探针卡排名第6，向长江存储出货，3D MEMS预研覆盖HBM"
+    },
+    {
+      "from": "concept:薄膜沉积设备",
+      "to": "company:北方华创:A股:002371",
+      "relationType": "contains",
+      "status": "research",
+      "note": "覆盖PVD/CVD/ALD设备，14nm薄膜沉积设备已量产，Polaris系列PVD成功产业化"
+    },
+    {
+      "from": "concept:薄膜沉积设备",
+      "to": "company:中微公司:A股:688012",
+      "relationType": "contains",
+      "status": "research",
+      "note": "ALD设备国内唯一量产，适配3D NAND/HBM堆叠需求"
+    },
+    {
+      "from": "concept:薄膜沉积设备",
+      "to": "company:拓荆科技:A股:688072",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内唯一产业化PECVD/SACVD，ALD领先，适配19/17nm DRAM及HBM，批量导入长鑫产线"
+    },
+    {
+      "from": "concept:薄膜沉积设备",
+      "to": "company:微导纳米:A股:688147",
+      "relationType": "contains",
+      "status": "research",
+      "note": "ALD原子层沉积设备应用于长鑫存储DRAM产线，薄膜均匀性±1%，获大基金二期投资"
+    },
+    {
+      "from": "concept:零部件及辅助设备",
+      "to": "company:神工股份:A股:688233",
+      "relationType": "contains",
+      "status": "research",
+      "note": "硅零部件，三星等存储厂商源头供应商"
+    },
+    {
+      "from": "concept:零部件及辅助设备",
+      "to": "company:富创精密:A股:688409",
+      "relationType": "contains",
+      "status": "research",
+      "note": "半导体设备精密零部件供应商，受益长鑫扩产带来的设备国产化需求"
+    },
+    {
+      "from": "concept:零部件及辅助设备",
+      "to": "company:正帆科技:A股:688596",
+      "relationType": "contains",
+      "status": "research",
+      "note": "长鑫存储高纯气体GDS系统独家核心供应商，收购汉京半导体拓展石英/碳化硅陶瓷零部件"
+    },
+    {
+      "from": "concept:零部件及辅助设备",
+      "to": "company:京仪装备:A股:688652",
+      "relationType": "contains",
+      "status": "research",
+      "note": "半导体专用温控设备（-70℃~120℃，精度±0.05℃）和工艺废气处理设备国内龙头，长鑫核心供应商"
+    },
+    {
+      "from": "concept:刻蚀设备",
+      "to": "company:北方华创:A股:002371",
+      "relationType": "contains",
+      "status": "research",
+      "note": "12英寸TSV刻蚀机市占率超50%，覆盖CCP/ICP/TSV深孔刻蚀，长鑫扩产核心设备供应商"
+    },
+    {
+      "from": "concept:刻蚀设备",
+      "to": "company:中微公司:A股:688012",
+      "relationType": "contains",
+      "status": "research",
+      "note": "CCP/ICP刻蚀设备国际一流，5nm通过台积电验证；TSV深孔刻蚀设备用于HBM堆叠"
+    },
+    {
+      "from": "concept:离子注入设备",
+      "to": "company:万业企业:A股:600641",
+      "relationType": "contains",
+      "status": "research",
+      "note": "旗下凯世通低能大束流/高能离子注入机获长鑫存储订单，国内唯一上市标的"
+    },
+    {
+      "from": "concept:量测检测设备",
+      "to": "company:精测电子:A股:300567",
+      "relationType": "contains",
+      "status": "research",
+      "note": "HBM3检测设备已获小批量订单，膜厚/关键尺寸量测设备进入长鑫验证"
+    },
+    {
+      "from": "concept:量测检测设备",
+      "to": "company:中科飞测:A股:688361",
+      "relationType": "contains",
+      "status": "research",
+      "note": "无图形检测市占率70%，图形缺陷检测进入长鑫产线验证"
+    },
+    {
+      "from": "concept:半导体掩膜版",
+      "to": "company:菲利华:A股:300395",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内唯一大规格光掩膜基板"
+    },
+    {
+      "from": "concept:半导体掩膜版",
+      "to": "company:冠石科技:A股:605588",
+      "relationType": "contains",
+      "status": "research",
+      "note": "55nm交付，40nm通线"
+    },
+    {
+      "from": "concept:半导体掩膜版",
+      "to": "company:清溢光电:A股:688138",
+      "relationType": "contains",
+      "status": "research",
+      "note": "180nm量产，佛山基地推进65nm"
+    },
+    {
+      "from": "concept:半导体掩膜版",
+      "to": "company:路维光电:A股:688401",
+      "relationType": "contains",
+      "status": "research",
+      "note": "180nm量产，路芯半导体45-28nm布局"
+    },
+    {
+      "from": "concept:半导体掩膜版",
+      "to": "company:龙图光罩:A股:688721",
+      "relationType": "contains",
+      "status": "research",
+      "note": "90nm量产，全球排名第六"
+    },
+    {
+      "from": "industry:存储封测",
+      "to": "company:太极实业:A股:600667",
+      "relationType": "contains",
+      "status": "research",
+      "note": "太极半导体为长鑫提供DRAM/LPDDR4封测；十一科技承建长鑫晶圆厂二期EPC工程"
+    },
+    {
+      "from": "industry:存储封测",
+      "to": "company:深科技:A股:000021",
+      "relationType": "contains",
+      "status": "research",
+      "note": "长鑫最大委外封测供应商（60%+订单），完成HBM3封装工艺开发"
+    },
+    {
+      "from": "industry:存储封测",
+      "to": "company:通富微电:A股:002156",
+      "relationType": "contains",
+      "status": "research",
+      "note": "HBM2试产，TSV密度达10⁶/cm²，布局2.5D封装"
+    },
+    {
+      "from": "industry:存储封测",
+      "to": "company:华天科技:A股:002185",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内头部封测，TSV/Bumping能力完备"
+    },
+    {
+      "from": "industry:存储封测",
+      "to": "company:长电科技:A股:600584",
+      "relationType": "contains",
+      "status": "research",
+      "note": "XDFOI 2.5D/3D封装技术支持HBM封装"
+    },
+    {
+      "from": "industry:存储封测",
+      "to": "company:沃格光电:A股:603773",
+      "relationType": "contains",
+      "status": "research",
+      "note": "TGV玻璃封装载板，3D Chiplet潜在方案"
+    },
+    {
+      "from": "industry:存储封测",
+      "to": "material:封装基板",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "HBM封装必需的高端载板"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:CMP抛光垫",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:CMP抛光液",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:GMC颗粒环氧塑封料",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "HBM封装核心材料"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:靶材",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:前驱体",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:大马士革铜互连电镀液",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:高选择比湿法刻蚀液",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:电子特气",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:高频高速树脂",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "PCB/载板用特种树脂"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:干法刻蚀后清洗液",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:先进封装胶",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "HBM先进封装用胶粘材料"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:光刻胶",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:硅片",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "material:TSV电镀铜添加剂",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:电子化学品",
+      "to": "company:长鑫科技",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "原材料供应长鑫晶圆制造"
+    },
+    {
+      "from": "industry:存储模组",
+      "to": "company:朗科科技:A股:300042",
+      "relationType": "contains",
+      "status": "research",
+      "note": "存储模组制造商，参与长鑫颗粒模组集成"
+    },
+    {
+      "from": "industry:存储模组",
+      "to": "company:商络电子:A股:300975",
+      "relationType": "contains",
+      "status": "research",
+      "note": "长鑫前五大代理商，DRAM模组分销"
+    },
+    {
+      "from": "industry:存储模组",
+      "to": "company:江波龙:A股:301308",
+      "relationType": "contains",
+      "status": "research",
+      "note": "基于长鑫DRAM推出FORESEE品牌，企业级存储收入同比增180%"
+    },
+    {
+      "from": "industry:存储模组",
+      "to": "company:佰维存储:A股:688525",
+      "relationType": "contains",
+      "status": "research",
+      "note": "存算一体封装，储备HBM Chiplet技术"
+    },
+    {
+      "from": "industry:存储模组",
+      "to": "company:浪潮信息:A股:000977",
+      "relationType": "downstream",
+      "status": "fact",
+      "note": "企业级/消费级模组应用于服务器与手机"
+    },
+    {
+      "from": "industry:存储模组",
+      "to": "company:传音控股:A股:688036",
+      "relationType": "downstream",
+      "status": "fact",
+      "note": "LPDDR模组应用于智能手机"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:CMP设备",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:测试设备",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:清洗设备",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:薄膜沉积设备",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "占设备投资约20%"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:零部件及辅助设备",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:刻蚀设备",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "占设备投资约20%"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:离子注入设备",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:量测检测设备",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "concept:半导体掩膜版",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "光刻工序核心工具"
+    },
+    {
+      "from": "industry:半导体设备",
+      "to": "company:长鑫科技",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "设备供应长鑫产线建设"
+    },
+    {
+      "from": "material:ArF光刻胶",
+      "to": "company:南大光电:A股:300346",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内唯一ArF光刻胶量产（28nm），500吨产能，已进入长鑫验证/供应链"
+    },
+    {
+      "from": "material:ArF光刻胶",
+      "to": "company:晶瑞电材:A股:300655",
+      "relationType": "contains",
+      "status": "research",
+      "note": "ArF干法/浸没式光刻胶验证中"
+    },
+    {
+      "from": "material:ArF光刻胶",
+      "to": "company:彤程新材:A股:603650",
+      "relationType": "contains",
+      "status": "research",
+      "note": "ArF湿法胶量产推进中，长鑫光刻胶供应商"
+    },
+    {
+      "from": "material:CMP抛光垫",
+      "to": "company:鼎龙股份:A股:300054",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内唯一全流程自主CMP抛光垫，已通过长鑫存储认证并批量供货，月产能60万片/年"
+    },
+    {
+      "from": "material:CMP抛光液",
+      "to": "company:鼎龙股份:A股:300054",
+      "relationType": "contains",
+      "status": "research",
+      "note": "自研氧化铝磨料，28nm HKMG制程突破，CMP抛光液进入长鑫验证"
+    },
+    {
+      "from": "material:CMP抛光液",
+      "to": "company:安集科技:A股:688019",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内CMP抛光液绝对龙头，长鑫核心供应商，17nm已量产，毛利率约58%"
+    },
+    {
+      "from": "material:GMC填料",
+      "to": "company:联瑞新材:A股:688300",
+      "relationType": "contains",
+      "status": "research",
+      "note": "Low-α球形硅微粉+球形氧化铝核心供应商，通过GMC厂商间接配套HBM"
+    },
+    {
+      "from": "material:GMC填料",
+      "to": "company:壹石通:A股:688733",
+      "relationType": "contains",
+      "status": "research",
+      "note": "Low-α球形氧化铝，导入三星/海力士"
+    },
+    {
+      "from": "material:GMC颗粒环氧塑封料",
+      "to": "company:雅克科技:A股:002409",
+      "relationType": "contains",
+      "status": "research",
+      "note": "子公司华飞电子生产球形硅微粉，Low-α球硅已量产"
+    },
+    {
+      "from": "material:GMC颗粒环氧塑封料",
+      "to": "company:华海诚科:A股:688535",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内唯一量产HBM专用GMC，已通过长鑫存储验证"
+    },
+    {
+      "from": "material:GMC颗粒环氧塑封料",
+      "to": "material:GMC填料",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "GMC核心填料组分"
+    },
+    {
+      "from": "material:靶材",
+      "to": "company:江丰电子:A股:300666",
+      "relationType": "contains",
+      "status": "research",
+      "note": "高纯铜/钽/钛靶材，用于PVD阻挡层/种子层，长鑫靶材供应商"
+    },
+    {
+      "from": "material:前驱体",
+      "to": "company:雅克科技:A股:002409",
+      "relationType": "contains",
+      "status": "research",
+      "note": "Baseline级核心供应商，国内唯一全品类，HBM前驱体龙头，长鑫市占率超60%"
+    },
+    {
+      "from": "material:封装基板",
+      "to": "company:生益科技:A股:600183",
+      "relationType": "contains",
+      "status": "research",
+      "note": "高端覆铜板/ABF材料研发"
+    },
+    {
+      "from": "material:封装基板",
+      "to": "company:兴森科技:A股:002436",
+      "relationType": "contains",
+      "status": "research",
+      "note": "BT载板（存储封装）+ABF载板（FC-BGA）"
+    },
+    {
+      "from": "material:封装基板",
+      "to": "company:深南电路:A股:002916",
+      "relationType": "contains",
+      "status": "research",
+      "note": "BT/ABF封装基板，BT基板已通过长鑫存储认证"
+    },
+    {
+      "from": "material:封装基板",
+      "to": "company:华正新材:A股:603186",
+      "relationType": "contains",
+      "status": "research",
+      "note": "CBF积层绝缘膜（ABF替代）"
+    },
+    {
+      "from": "material:封装基板",
+      "to": "company:博敏电子:A股:603936",
+      "relationType": "contains",
+      "status": "research",
+      "note": "存储类IC封装载板"
+    },
+    {
+      "from": "material:大马士革铜互连电镀液",
+      "to": "company:上海新阳:A股:300236",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内唯一实现14nm大马士革铜互连电镀液量产的企业，长鑫14nm及以上制程核心供应商"
+    },
+    {
+      "from": "material:大马士革铜互连电镀液",
+      "to": "company:艾森股份:A股:688720",
+      "relationType": "contains",
+      "status": "research",
+      "note": "14nm大马士革镀铜添加剂处于中试阶段，28nm产品推进中"
+    },
+    {
+      "from": "material:高选择比湿法刻蚀液",
+      "to": "company:上海新阳:A股:300236",
+      "relationType": "contains",
+      "status": "research",
+      "note": "高选择比氮化硅蚀刻液、氮化钛蚀刻液，14nm量产，长鑫存储高选择比蚀刻液核心供应商"
+    },
+    {
+      "from": "material:高选择比湿法刻蚀液",
+      "to": "company:江化微:A股:603078",
+      "relationType": "contains",
+      "status": "research",
+      "note": "全品类湿电子化学品覆盖，已进入长鑫供应链"
+    },
+    {
+      "from": "material:高选择比湿法刻蚀液",
+      "to": "company:兴福电子:A股:688545",
+      "relationType": "contains",
+      "status": "research",
+      "note": "高选择比磷酸、高性能SiGe蚀刻液、Mo蚀刻液等，荣获长鑫科技集团供应商质量奖，G5级磷酸全球龙头"
+    },
+    {
+      "from": "material:电子特气",
+      "to": "company:南大光电:A股:300346",
+      "relationType": "contains",
+      "status": "research",
+      "note": "6N纯度磷烷/砷烷，国内龙头，已进入头部晶圆厂"
+    },
+    {
+      "from": "material:电子特气",
+      "to": "company:金宏气体:A股:688106",
+      "relationType": "contains",
+      "status": "research",
+      "note": "供应长鑫/台积电，6N高纯氦气"
+    },
+    {
+      "from": "material:电子特气",
+      "to": "company:中船特气:A股:688146",
+      "relationType": "contains",
+      "status": "research",
+      "note": "三氟化氮纯度5N，六氟化钨6N，长鑫/长江存储为核心客户"
+    },
+    {
+      "from": "material:电子特气",
+      "to": "company:华特气体:A股:688268",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内唯一ASML认证，光刻气市占率60%，2款产品进入5nm制程，已进入长鑫供应链"
+    },
+    {
+      "from": "material:电子特气",
+      "to": "company:广钢气体:A股:688548",
+      "relationType": "contains",
+      "status": "research",
+      "note": "与长鑫合肥二期签订15年供气协议"
+    },
+    {
+      "from": "material:高频高速树脂",
+      "to": "company:东材科技:A股:601208",
+      "relationType": "contains",
+      "status": "research",
+      "note": "BMI双马树脂/活性酯/M9碳氢树脂，千吨级产能"
+    },
+    {
+      "from": "material:高频高速树脂",
+      "to": "company:圣泉集团:A股:605589",
+      "relationType": "contains",
+      "status": "research",
+      "note": "M8-M9级碳氢树脂/BMI双马树脂，批量出货"
+    },
+    {
+      "from": "material:干法刻蚀后清洗液",
+      "to": "company:上海新阳:A股:300236",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内第一，28nm干法刻蚀后清洗液规模量产，14nm量产，客户覆盖中芯/长鑫/长江存储等120+家企业"
+    },
+    {
+      "from": "material:干法刻蚀后清洗液",
+      "to": "company:安集科技:A股:688019",
+      "relationType": "contains",
+      "status": "research",
+      "note": "CMP后清洗液及刻蚀后清洗液，铜制程CMP后清洗液持续稳定获得订单"
+    },
+    {
+      "from": "material:干法刻蚀后清洗液",
+      "to": "company:兴福电子:A股:688545",
+      "relationType": "contains",
+      "status": "research",
+      "note": "刻蚀后清洗液布局"
+    },
+    {
+      "from": "material:先进封装胶",
+      "to": "company:回天新材:A股:300041",
+      "relationType": "contains",
+      "status": "unverified",
+      "note": "底部填充胶，华为标杆客户批量使用"
+    },
+    {
+      "from": "material:先进封装胶",
+      "to": "company:鼎龙股份:A股:300054",
+      "relationType": "contains",
+      "status": "research",
+      "note": "临时键合胶+封装PI，2024年首获订单，110吨产线"
+    },
+    {
+      "from": "material:先进封装胶",
+      "to": "company:飞凯材料:A股:300398",
+      "relationType": "contains",
+      "status": "research",
+      "note": "临时键合胶验证导入中，EMC已量产"
+    },
+    {
+      "from": "material:先进封装胶",
+      "to": "company:德邦科技:A股:688035",
+      "relationType": "contains",
+      "status": "research",
+      "note": "DAF膜/Underfill/导热界面材料，批量供货长电/通富/华天"
+    },
+    {
+      "from": "material:光刻胶",
+      "to": "material:ArF光刻胶",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "material:光刻胶",
+      "to": "material:KrF光刻胶",
+      "relationType": "contains",
+      "status": "fact"
+    },
+    {
+      "from": "material:硅片",
+      "to": "company:沪硅产业:A股:688126",
+      "relationType": "contains",
+      "status": "research",
+      "note": "12英寸半导体硅片国内龙头，长鑫晶圆制造核心原材料供应商"
+    },
+    {
+      "from": "material:KrF光刻胶",
+      "to": "company:南大光电:A股:300346",
+      "relationType": "contains",
+      "status": "research",
+      "note": "KrF光刻胶布局"
+    },
+    {
+      "from": "material:KrF光刻胶",
+      "to": "company:晶瑞电材:A股:300655",
+      "relationType": "contains",
+      "status": "research",
+      "note": "KrF光刻胶量产"
+    },
+    {
+      "from": "material:KrF光刻胶",
+      "to": "company:彤程新材:A股:603650",
+      "relationType": "contains",
+      "status": "research",
+      "note": "KrF光刻胶市占率国内第一"
+    },
+    {
+      "from": "material:TSV电镀铜添加剂",
+      "to": "company:上海新阳:A股:300236",
+      "relationType": "contains",
+      "status": "research",
+      "note": "国内电镀液龙头，TSV/Bumping电镀铜添加剂覆盖90-14nm，已填补国产空白"
+    },
+    {
+      "from": "material:TSV电镀铜添加剂",
+      "to": "company:天承科技:A股:688603",
+      "relationType": "contains",
+      "status": "research",
+      "note": "TSV电镀铜添加剂已研发完成，正全力为头部存储客户提供解决方案，长鑫为其核心客户"
+    },
+    {
+      "from": "material:TSV电镀铜添加剂",
+      "to": "company:艾森股份:A股:688720",
+      "relationType": "contains",
+      "status": "research",
+      "note": "TSV电镀添加剂处于客户端测试验证阶段"
+    },
+    {
+      "from": "narrative:长鑫产业链",
+      "to": "company:长鑫科技",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "核心IDM企业"
+    },
+    {
+      "from": "narrative:长鑫产业链",
+      "to": "industry:存储封测",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "长鑫自主测试+委外封装环节"
+    },
+    {
+      "from": "narrative:长鑫产业链",
+      "to": "industry:电子化学品",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "电化学耗材、光刻胶、前驱体等原材料环节"
+    },
+    {
+      "from": "narrative:长鑫产业链",
+      "to": "industry:存储模组",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "基于长鑫颗粒的模组制造环节"
+    },
+    {
+      "from": "narrative:长鑫产业链",
+      "to": "industry:半导体设备",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "刻蚀、沉积、CMP、清洗、量测、测试、零部件设备环节"
+    }
+  ]
+}
