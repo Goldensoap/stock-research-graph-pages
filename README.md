@@ -1,48 +1,53 @@
-# 产研图谱 GitHub Pages 静态站
+# 产研图谱
 
-这是一个独立的静态前端仓库，用于把产研图谱部署为 GitHub Pages project site。站点不包含数据库和后端 API，只在浏览器中读取 `public/data/graphs` 下的 JSON 文件并渲染只读图谱。
+本仓库把本地可编辑工具和 GitHub Pages 静态只读站放在一起维护。编辑器用于本地维护图谱数据，静态站用于公开展示导出的 JSON 图谱。
 
-## 本地运行
+## 目录结构
+
+```text
+apps/
+  editor/      # 本地可编辑 Next.js 工具，使用 SQLite，不部署到 GitHub Pages
+  viewer/      # GitHub Pages 静态只读站，读取静态 JSON 渲染图谱
+docs/          # 图谱 JSON 格式和维护文档
+```
+
+## 本地编辑器
 
 ```bash
+cd apps/editor
 npm install
 npm run dev
 ```
 
-## 本地构建
+编辑器默认使用本地 SQLite。数据库文件和 `.env` 不提交到 Git。
+
+## 静态展示站
 
 ```bash
-npm run build
+cd apps/viewer
+npm install
+npm run dev
 ```
 
-构建产物位于 `dist/`，GitHub Actions 会自动把它发布到 GitHub Pages。
-
-## 更新图谱
-
-1. 把从编辑版产研图谱导出的 `stock-research-graph.authoring` JSON 放到 `public/data/graphs/`。
-2. 在 `public/data/graphs/index.json` 中追加图谱入口：
-
-```json
-{
-  "id": "semiconductor",
-  "label": "半导体产业链",
-  "file": "semiconductor.json",
-  "summary": "半导体产业链只读图谱。"
-}
-```
-
-3. 提交并推送到 GitHub，等待 Actions 完成部署。
-
-## GitHub Pages 设置
-
-在 GitHub 仓库页面进入 `Settings -> Pages`，把 `Build and deployment -> Source` 设置为 `GitHub Actions`。推送到 `main` 分支后，`.github/workflows/pages.yml` 会构建并发布站点。
-
-项目站点地址通常是：
+静态站的数据位于：
 
 ```text
-https://<你的 GitHub 用户名>.github.io/<仓库名>/
+apps/viewer/public/data/graphs/
 ```
+
+## 更新公开图谱
+
+1. 在 `apps/editor` 中编辑图谱。
+2. 导出 `stock-research-graph.authoring` 格式 JSON。
+3. 放入 `apps/viewer/public/data/graphs/`。
+4. 更新 `apps/viewer/public/data/graphs/index.json`。
+5. 在 `apps/viewer` 下运行 `npm run build` 验证。
+6. 提交并推送到 `main`，GitHub Actions 会自动发布静态站。
+
+## GitHub Pages
+
+`.github/workflows/pages.yml` 只构建并发布 `apps/viewer`，不会部署 `apps/editor`。
 
 ## 数据公开性
 
-GitHub Pages 是公开静态站点。不要把未公开研报、账号、密钥、数据库文件或任何敏感信息放入本仓库。
+GitHub Pages 是公开静态站点。不要提交 SQLite 数据库、账号密钥、未公开研报或任何敏感信息。
