@@ -1,0 +1,1287 @@
+{
+  "schemaVersion": 2,
+  "kind": "stock-research-graph.authoring",
+  "graph": {
+    "label": "具身智能产业链",
+    "summary": "具身智能（Embodied AI）产业链全景图谱，涵盖物理AI大模型、仿真模拟、机器人本体、执行器与关节、减速器、丝杠、电机、传感器、灵巧手、轻量化材料、计算平台等核心环节，以及对应的美股和A股核心上市公司。",
+    "sortOrder": 10
+  },
+  "lanes": [
+    {
+      "label": "物理AI与大脑",
+      "color": "#8B5CF6",
+      "order": 10
+    },
+    {
+      "label": "仿真模拟与数字孪生",
+      "color": "#06B6D4",
+      "order": 20
+    },
+    {
+      "label": "计算平台与芯片",
+      "color": "#F59E0B",
+      "order": 30
+    },
+    {
+      "label": "传感器与感知",
+      "color": "#10B981",
+      "order": 40
+    },
+    {
+      "label": "电机与驱动",
+      "color": "#EF4444",
+      "order": 50
+    },
+    {
+      "label": "减速器与传动",
+      "color": "#EC4899",
+      "order": 60
+    },
+    {
+      "label": "丝杠与线性执行",
+      "color": "#6366F1",
+      "order": 70
+    },
+    {
+      "label": "执行器与关节总成",
+      "color": "#14B8A6",
+      "order": 80
+    },
+    {
+      "label": "灵巧手与末端执行",
+      "color": "#F97316",
+      "order": 90
+    },
+    {
+      "label": "轻量化材料",
+      "color": "#84CC16",
+      "order": 100
+    },
+    {
+      "label": "机器人本体",
+      "color": "#3B82F6",
+      "order": 110
+    }
+  ],
+  "nodes": [
+    {
+      "type": "narrative",
+      "label": "具身智能",
+      "weightTier": "high",
+      "summary": "通过物理实体与环境交互实现智能增长的系统，核心在于智能体通过物理身体与环境的交互来实现感知、理解、决策和行动。2025年中国市场规模约53亿元，预计2030年达4000亿元。"
+    },
+    {
+      "type": "concept",
+      "label": "物理AI",
+      "weightTier": "high",
+      "lane": "物理AI与大脑",
+      "summary": "Physical AI，将AI大模型能力赋予物理实体，使机器人能够通过学习而非硬编码来执行物理任务。NVIDIA将其定位为与生成式AI并列的下一个重大平台转变。"
+    },
+    {
+      "type": "concept",
+      "label": "VLA模型",
+      "weightTier": "high",
+      "lane": "物理AI与大脑",
+      "summary": "Vision-Language-Action视觉-语言-行动模型，机器人大脑的核心架构，接受多模态输入（图像、语言、力觉），输出关节控制指令。代表：Figure Helix、NVIDIA GR00T。"
+    },
+    {
+      "type": "concept",
+      "label": "具身大模型",
+      "weightTier": "high",
+      "lane": "物理AI与大脑",
+      "summary": "专为机器人设计的Foundation Model基础模型，通过视频和仿真数据训练，实现跨平台、跨任务的通用物理智能。"
+    },
+    {
+      "type": "company",
+      "label": "NVIDIA",
+      "weightTier": "high",
+      "lane": "物理AI与大脑",
+      "market": "美股",
+      "ticker": "NVDA",
+      "summary": "物理AI基础设施领导者，提供GR00T人形机器人基础模型、Cosmos世界模型、Isaac Sim仿真平台、Jetson Thor边缘芯片等全栈解决方案。"
+    },
+    {
+      "type": "company",
+      "label": "Physical Intelligence",
+      "weightTier": "high",
+      "lane": "物理AI与大脑",
+      "summary": "物理智能公司（pi），开发通用机器人基础模型pi-0.5，可让任何机器人执行折叠衣物、剥蔬菜等物理任务，估值超56亿美元。由前Google DeepMind研究员创立。"
+    },
+    {
+      "type": "company",
+      "label": "Skild AI",
+      "weightTier": "medium",
+      "lane": "物理AI与大脑",
+      "summary": "开发Skild Brain通用机器人大脑，利用大规模视频和机器人交互数据集创建跨平台通用智能，2026年1月融资近14亿美元，估值超140亿美元。"
+    },
+    {
+      "type": "company",
+      "label": "银河通用",
+      "weightTier": "medium",
+      "lane": "物理AI与大脑",
+      "summary": "中国具身智能大模型公司，自研AstraBrain通用型基础具身智能大模型，估值约200亿元，国家大基金参投。"
+    },
+    {
+      "type": "concept",
+      "label": "机器人仿真平台",
+      "weightTier": "high",
+      "lane": "仿真模拟与数字孪生",
+      "summary": "通过物理精确的虚拟环境训练机器人策略，实现Sim-to-Real迁移，大幅降低真实世界数据收集成本和风险。"
+    },
+    {
+      "type": "product",
+      "label": "Isaac Sim",
+      "weightTier": "high",
+      "lane": "仿真模拟与数字孪生",
+      "summary": "NVIDIA基于Omniverse的机器人仿真平台，支持GPU加速物理仿真、光线追踪渲染和大规模并行训练，已成为物理AI开发的事实标准。"
+    },
+    {
+      "type": "product",
+      "label": "MuJoCo",
+      "weightTier": "medium",
+      "lane": "仿真模拟与数字孪生",
+      "summary": "Google DeepMind开源的物理引擎，以接触物理精度著称，是学术研究和接触丰富操作研究的首选仿真器。"
+    },
+    {
+      "type": "product",
+      "label": "Newton物理引擎",
+      "weightTier": "medium",
+      "lane": "仿真模拟与数字孪生",
+      "summary": "NVIDIA与Google DeepMind、Disney Research联合开发的开源物理引擎，基于Warp构建，在人形机器人运动任务上比MuJoCo快152倍。"
+    },
+    {
+      "type": "company",
+      "label": "AutoDesk",
+      "weightTier": "medium",
+      "lane": "仿真模拟与数字孪生",
+      "market": "美股",
+      "ticker": "ADSK",
+      "summary": "工业数字孪生领域渗透率65%，Forge平台用于工业数字孪生应用。"
+    },
+    {
+      "type": "concept",
+      "label": "机器人边缘计算",
+      "weightTier": "high",
+      "lane": "计算平台与芯片",
+      "summary": "在机器人本体上运行的实时AI推理和控制系统，要求高算力、低功耗、低延迟，是机器人的'小脑'。"
+    },
+    {
+      "type": "product",
+      "label": "Jetson Thor",
+      "weightTier": "high",
+      "lane": "计算平台与芯片",
+      "summary": "NVIDIA专为机器人设计的SoC，Blackwell架构，2070 TFLOPS算力，128GB内存，功耗40-130W，2025年8月上市。"
+    },
+    {
+      "type": "company",
+      "label": "高通",
+      "weightTier": "medium",
+      "lane": "计算平台与芯片",
+      "market": "美股",
+      "ticker": "QCOM",
+      "summary": "CES 2026推出龙翼IQ10系列处理器，面向工业AMR和全尺寸人形机器人。"
+    },
+    {
+      "type": "company",
+      "label": "寒武纪",
+      "weightTier": "medium",
+      "lane": "计算平台与芯片",
+      "market": "A股",
+      "ticker": "688256",
+      "summary": "中国AI芯片龙头，推出具身智能专用芯片，实现5TOPS/W能效比，支撑人形机器人实时决策。"
+    },
+    {
+      "type": "company",
+      "label": "地平线",
+      "weightTier": "medium",
+      "lane": "计算平台与芯片",
+      "summary": "中国边缘AI芯片龙头，征程系列芯片可用于机器人感知和决策。"
+    },
+    {
+      "type": "company",
+      "label": "瑞芯微",
+      "weightTier": "medium",
+      "lane": "计算平台与芯片",
+      "market": "A股",
+      "ticker": "603893",
+      "summary": "机器人主控芯片龙头，单颗模组售价约200元，需求年增200%。"
+    },
+    {
+      "type": "concept",
+      "label": "六维力矩传感器",
+      "weightTier": "high",
+      "lane": "传感器与感知",
+      "summary": "实时检测三维力和三维力矩，是机器人力控操作的'神经末梢'，单台人形机器人用量≥4颗，ASP约2000-2500元。"
+    },
+    {
+      "type": "concept",
+      "label": "电子皮肤",
+      "weightTier": "high",
+      "lane": "传感器与感知",
+      "summary": "柔性触觉传感器阵列，模拟人类皮肤触觉感知能力，用于灵巧手全掌触觉反馈，单台Gen3价值量约8000元。"
+    },
+    {
+      "type": "concept",
+      "label": "3D视觉传感器",
+      "weightTier": "high",
+      "lane": "传感器与感知",
+      "summary": "机器人的'眼睛'，提供深度信息和三维场景理解，渗透率已达67%，推动工业机器人环境感知成本下降42%。"
+    },
+    {
+      "type": "company",
+      "label": "柯力传感",
+      "weightTier": "high",
+      "lane": "传感器与感知",
+      "market": "A股",
+      "ticker": "603662",
+      "summary": "国内唯一实现六维力/力矩传感器量产的企业，精度达±0.1%FS，价格仅为海外一半，已进入特斯拉供应链验证阶段。"
+    },
+    {
+      "type": "company",
+      "label": "汉威科技",
+      "weightTier": "medium",
+      "lane": "传感器与感知",
+      "market": "A股",
+      "ticker": "300007",
+      "summary": "柔性触觉传感器龙头，子公司能斯达灵敏度达0.1kPa级，是华为人形机器人电子皮肤唯一供应商，合作小米、优必选等17家头部厂商。"
+    },
+    {
+      "type": "company",
+      "label": "福莱新材",
+      "weightTier": "medium",
+      "lane": "传感器与感知",
+      "market": "A股",
+      "ticker": "605488",
+      "summary": "国内柔性触觉传感（电子皮肤）头部玩家，电阻式技术路径与特斯拉方案完全吻合，已实现小批量供货，在北美设立子公司直面特斯拉。"
+    },
+    {
+      "type": "company",
+      "label": "奥比中光",
+      "weightTier": "medium",
+      "lane": "传感器与感知",
+      "market": "A股",
+      "ticker": "688322",
+      "summary": "3D视觉传感器国产替代龙头，绑定宇树、智元、Figure等头部客户，2025年收入同比增长36.79%，毛利率提升至54.4%。"
+    },
+    {
+      "type": "company",
+      "label": "ATI Industrial Automation",
+      "weightTier": "medium",
+      "lane": "传感器与感知",
+      "summary": "全球六维力传感器龙头，美国公司，产品广泛应用于工业机器人、协作机器人和人形机器人。"
+    },
+    {
+      "type": "concept",
+      "label": "空心杯电机",
+      "weightTier": "high",
+      "lane": "电机与驱动",
+      "summary": "灵巧手手指驱动的核心部件，具有高效率、高响应、低惯量的特点，单台人形机器人用量12-22颗。"
+    },
+    {
+      "type": "concept",
+      "label": "无框力矩电机",
+      "weightTier": "high",
+      "lane": "电机与驱动",
+      "summary": "直接集成于机器人关节的电机，具有高扭矩密度，适配肩、肘、髋等大扭矩关节场景。"
+    },
+    {
+      "type": "company",
+      "label": "鸣志电器",
+      "weightTier": "high",
+      "lane": "电机与驱动",
+      "market": "A股",
+      "ticker": "603728",
+      "summary": "空心杯电机全球市占率前三，深度受益灵巧手需求爆发，为特斯拉Optimus灵巧手、宇树、优必选等供货，已通过特斯拉C轮认证。"
+    },
+    {
+      "type": "company",
+      "label": "步科股份",
+      "weightTier": "medium",
+      "lane": "电机与驱动",
+      "market": "A股",
+      "ticker": "688160",
+      "summary": "国内无框力矩电机龙头，产品契合人形机器人对轻量化、紧凑型关节模块的要求，国内市占率近50%。"
+    },
+    {
+      "type": "company",
+      "label": "汇川技术",
+      "weightTier": "high",
+      "lane": "电机与驱动",
+      "market": "A股",
+      "ticker": "300124",
+      "summary": "国内工控与伺服系统龙头，通用伺服系统国内市占率第一（28.3%），推出第四代FMK系列无框力矩电机，已成立智能机器人事业部布局人形机器人。"
+    },
+    {
+      "type": "company",
+      "label": "卧龙电驱",
+      "weightTier": "medium",
+      "lane": "电机与驱动",
+      "market": "A股",
+      "ticker": "600580",
+      "summary": "全球电机制造巨头，无框力矩电机核心供应商，为宇树科技机器人提供大扭矩关节动力。"
+    },
+    {
+      "type": "company",
+      "label": "Maxon Motor",
+      "weightTier": "medium",
+      "lane": "电机与驱动",
+      "summary": "瑞士精密电机龙头，产品覆盖6-90mm直径的直流电机和行星齿轮箱，广泛用于机器人和医疗设备。"
+    },
+    {
+      "type": "concept",
+      "label": "谐波减速器",
+      "weightTier": "high",
+      "lane": "减速器与传动",
+      "summary": "利用柔性齿轮变形传递运动和动力，具有零背隙、高精度、高减速比的特点，是人形机器人旋转关节的核心部件。"
+    },
+    {
+      "type": "concept",
+      "label": "RV减速器",
+      "weightTier": "high",
+      "lane": "减速器与传动",
+      "summary": "摆线针轮减速器，具有高刚性、高扭矩、长寿命的特点，主要用于工业机器人中大型负载关节。"
+    },
+    {
+      "type": "company",
+      "label": "绿的谐波",
+      "weightTier": "high",
+      "lane": "减速器与传动",
+      "market": "A股",
+      "ticker": "688017",
+      "summary": "谐波减速器国产替代龙头，国内市占率超60%，全球市占率超35%，已通过特斯拉供应链验证，2025年Q1人形机器人收入占比达30%。"
+    },
+    {
+      "type": "company",
+      "label": "双环传动",
+      "weightTier": "high",
+      "lane": "减速器与传动",
+      "market": "A股",
+      "ticker": "002472",
+      "summary": "RV减速器核心供应商，通过拓普、三花间接进入Optimus供应链，传动效率97%，2025年产能提升至50万台。"
+    },
+    {
+      "type": "company",
+      "label": "中大力德",
+      "weightTier": "medium",
+      "lane": "减速器与传动",
+      "market": "A股",
+      "ticker": "002896",
+      "summary": "国内唯一量产行星/RV/谐波全品类减速器的企业，锁定宇树32亿元订单，深度参与下一代关节研发。"
+    },
+    {
+      "type": "company",
+      "label": "Harmonic Drive",
+      "weightTier": "medium",
+      "lane": "减速器与传动",
+      "summary": "日本哈默纳科，全球谐波减速器发明者和领导者，全球市占率约40%，精度行业最高。"
+    },
+    {
+      "type": "company",
+      "label": "Nabtesco",
+      "weightTier": "medium",
+      "lane": "减速器与传动",
+      "summary": "日本纳博特斯克，全球RV减速器龙头，市占率约60%，是FANUC、安川、KUKA等工业机器人的核心供应商。"
+    },
+    {
+      "type": "concept",
+      "label": "行星滚柱丝杠",
+      "weightTier": "high",
+      "lane": "丝杠与线性执行",
+      "summary": "将旋转运动转化为直线运动的核心部件，承载能力为滚珠丝杠的3-5倍，寿命2倍以上，用于人形机器人膝关节、肘关节等线性驱动。"
+    },
+    {
+      "type": "company",
+      "label": "五洲新春",
+      "weightTier": "high",
+      "lane": "丝杠与线性执行",
+      "market": "A股",
+      "ticker": "603667",
+      "summary": "反向行星滚柱丝杠主力供应商，产品用于髋关节、膝关节等大力矩部位，泰国工厂2026年投产，2025年全年股价涨幅曾达183%。"
+    },
+    {
+      "type": "company",
+      "label": "双林股份",
+      "weightTier": "medium",
+      "lane": "丝杠与线性执行",
+      "market": "A股",
+      "ticker": "300100",
+      "summary": "国内唯一量产反向式行星滚柱丝杠企业，精度±0.003mm超国际标准，收购科之鑫掌握上游螺纹磨床技术。"
+    },
+    {
+      "type": "company",
+      "label": "贝斯特",
+      "weightTier": "medium",
+      "lane": "丝杠与线性执行",
+      "market": "A股",
+      "ticker": "300580",
+      "summary": "自主研发标准式和反转式行星滚柱丝杠，精度达C0级，已斩获C0级丝杠首单并启动2026年量产准备。"
+    },
+    {
+      "type": "company",
+      "label": "恒立液压",
+      "weightTier": "medium",
+      "lane": "丝杠与线性执行",
+      "market": "A股",
+      "ticker": "601100",
+      "summary": "投资14亿元用于人形机器人线性驱动器项目，行星滚柱丝杠电动缸已投产，精度达±0.01mm。"
+    },
+    {
+      "type": "company",
+      "label": "新剑传动",
+      "weightTier": "high",
+      "lane": "丝杠与线性执行",
+      "summary": "特斯拉Optimus一级供应商，年产100万台人形机器人行星滚柱丝杠，2026年1月启动A股IPO辅导，中信证券担任辅导机构。"
+    },
+    {
+      "type": "concept",
+      "label": "旋转执行器",
+      "weightTier": "high",
+      "lane": "执行器与关节总成",
+      "summary": "由电机+减速器+编码器+力矩传感器集成的一体化关节模组，用于髋、肩等旋转自由度关节。"
+    },
+    {
+      "type": "concept",
+      "label": "线性执行器",
+      "weightTier": "high",
+      "lane": "执行器与关节总成",
+      "summary": "由电机+行星滚柱丝杠+导轨集成的一体化直线运动模组，用于膝、肘等伸缩自由度关节。"
+    },
+    {
+      "type": "company",
+      "label": "拓普集团",
+      "weightTier": "high",
+      "lane": "执行器与关节总成",
+      "market": "A股",
+      "ticker": "601689",
+      "summary": "特斯拉Optimus Tier 0.5级供应商，承担直线/旋转执行器总成，特斯拉业务占总营收35-40%，墨西哥工厂已投产，2026年Q2产能目标30万套。"
+    },
+    {
+      "type": "company",
+      "label": "三花智控",
+      "weightTier": "high",
+      "lane": "执行器与关节总成",
+      "market": "A股",
+      "ticker": "002050",
+      "summary": "关节模组总成核心供应商，2025年10月获特斯拉6.85亿美元订单，墨西哥工厂2026年起交付，投资38亿元建设杭州机器人执行器基地。"
+    },
+    {
+      "type": "concept",
+      "label": "灵巧手",
+      "weightTier": "high",
+      "lane": "灵巧手与末端执行",
+      "summary": "人形机器人执行精细操作的核心末端执行器，特斯拉Optimus Gen3实现22自由度，指尖精度0.08毫米，是整机上最复杂的子系统。"
+    },
+    {
+      "type": "company",
+      "label": "兆威机电",
+      "weightTier": "high",
+      "lane": "灵巧手与末端执行",
+      "market": "A股",
+      "ticker": "003021",
+      "summary": "灵巧手驱动模组龙头，微型电机+减速箱+丝杠一体化，17自由度灵巧手量产，获华为、特斯拉订单，毛利率超50%。"
+    },
+    {
+      "type": "company",
+      "label": "江苏雷利",
+      "weightTier": "medium",
+      "lane": "灵巧手与末端执行",
+      "market": "A股",
+      "ticker": "300660",
+      "summary": "微型电机及精密传动部件技术领先，行星滚柱丝杠产品进入客户端测试阶段，2025年灵巧手业务营收预计突破10亿元。"
+    },
+    {
+      "type": "concept",
+      "label": "PEEK材料",
+      "weightTier": "high",
+      "lane": "轻量化材料",
+      "summary": "聚醚醚酮，密度仅为铝合金1/2，比强度达8倍，用于机器人关节、齿轮等轻量化部件，单机用量约10kg，价值量约2000元。"
+    },
+    {
+      "type": "company",
+      "label": "中研股份",
+      "weightTier": "high",
+      "lane": "轻量化材料",
+      "market": "A股",
+      "ticker": "688716",
+      "summary": "国产PEEK绝对龙头，全球第四大生产商，国内市占率超30%，特斯拉Optimus关节轴承独家供应商，医疗级产品通过FDA认证。"
+    },
+    {
+      "type": "company",
+      "label": "沃特股份",
+      "weightTier": "medium",
+      "lane": "轻量化材料",
+      "market": "A股",
+      "ticker": "002886",
+      "summary": "国内唯一实现DFBP→树脂→改性全链条量产，碳纤维增强PEEK获空客认证，比亚迪、优必选送样中。"
+    },
+    {
+      "type": "company",
+      "label": "中欣氟材",
+      "weightTier": "medium",
+      "lane": "轻量化材料",
+      "market": "A股",
+      "ticker": "002915",
+      "summary": "全球最大DFBP（PEEK核心单体）供应商，产能5000吨/年，成本较进口低40%，深度绑定特斯拉供应链。"
+    },
+    {
+      "type": "concept",
+      "label": "人形机器人",
+      "weightTier": "high",
+      "lane": "机器人本体",
+      "summary": "具身智能的核心载体，2025年全球销量约1.8万台，预计2030年全球出货量达60.6万台，市场规模达150亿美元。"
+    },
+    {
+      "type": "company",
+      "label": "特斯拉",
+      "weightTier": "high",
+      "lane": "机器人本体",
+      "market": "美股",
+      "ticker": "TSLA",
+      "summary": "Optimus人形机器人，2026年目标量产5-10万台，2027年计划达50万台，目标单价降至2万美元以下，垂直整合芯片、AI和制造。"
+    },
+    {
+      "type": "company",
+      "label": "Figure AI",
+      "weightTier": "high",
+      "lane": "机器人本体",
+      "summary": "美国人形机器人独角兽，Figure 03机器人+BMW工厂验证成功，2025年9月C轮融资超10亿美元，估值390亿美元。计划4年内出货10万台。"
+    },
+    {
+      "type": "company",
+      "label": "波士顿动力",
+      "weightTier": "high",
+      "lane": "机器人本体",
+      "summary": "全球机器人技术先驱，电动版Atlas 56自由度、IP67防护，2026年1月启动量产，全部产能已承诺给现代和Google DeepMind。"
+    },
+    {
+      "type": "company",
+      "label": "Agility Robotics",
+      "weightTier": "medium",
+      "lane": "机器人本体",
+      "summary": "Digit仓库人形机器人，首个实现商业化部署（Amazon、GXO），累计搬运超10万个货箱，2025年融资约6.4亿美元。"
+    },
+    {
+      "type": "company",
+      "label": "Apptronik",
+      "weightTier": "medium",
+      "lane": "机器人本体",
+      "summary": "Apollo人形机器人，与奔驰、GXO、Jabil开展工厂试点，Google指定为Gemini Robotics独家硬件平台，2026年融资超9.35亿美元，估值55亿美元。"
+    },
+    {
+      "type": "company",
+      "label": "1X Technologies",
+      "weightTier": "medium",
+      "lane": "机器人本体",
+      "summary": "OpenAI投资的挪威人形机器人公司，NEO机器人聚焦家庭场景，2025年10月预售1万台售罄，售价2万美元，2026年美国交付。"
+    },
+    {
+      "type": "company",
+      "label": "宇树科技",
+      "weightTier": "high",
+      "lane": "机器人本体",
+      "summary": "中国四足和人形机器人龙头，G1售价1.6万美元，2025年出货5500+台，2026年目标2万台，已提交科创板IPO申请。"
+    },
+    {
+      "type": "company",
+      "label": "优必选",
+      "weightTier": "high",
+      "lane": "机器人本体",
+      "summary": "人形机器人第一股，Walker S2工业人形机器人2025年交付超500台，全年订单近14亿元，与空客、德州仪器达成战略合作。"
+    },
+    {
+      "type": "company",
+      "label": "智元机器人",
+      "weightTier": "high",
+      "lane": "机器人本体",
+      "summary": "华为系人形机器人公司，2026年3月第10000台通用具身机器人下线，15个月完成千台到万台的十倍跨越，营收超10.5亿元。"
+    }
+  ],
+  "edges": [
+    {
+      "from": "具身智能",
+      "to": "物理AI",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "物理AI是具身智能的核心技术范式"
+    },
+    {
+      "from": "具身智能",
+      "to": "人形机器人",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "人形机器人是具身智能的核心载体"
+    },
+    {
+      "from": "物理AI",
+      "to": "VLA模型",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "VLA是物理AI的核心模型架构"
+    },
+    {
+      "from": "物理AI",
+      "to": "具身大模型",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "具身大模型是物理AI的基础能力层"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "物理AI",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NVIDIA定义并推动Physical AI市场品类"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "VLA模型",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NVIDIA GR00T N1.7是领先的VLA模型"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "具身大模型",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Cosmos世界基础模型用于物理AI训练"
+    },
+    {
+      "from": "Physical Intelligence",
+      "to": "具身大模型",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "pi-0.5是通用机器人基础模型"
+    },
+    {
+      "from": "Skild AI",
+      "to": "具身大模型",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Skild Brain是通用机器人大脑"
+    },
+    {
+      "from": "银河通用",
+      "to": "具身大模型",
+      "relationType": "produces",
+      "status": "research",
+      "note": "AstraBrain通用型基础具身智能大模型"
+    },
+    {
+      "from": "具身智能",
+      "to": "机器人仿真平台",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "仿真是物理AI开发的核心基础设施"
+    },
+    {
+      "from": "机器人仿真平台",
+      "to": "Isaac Sim",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "Isaac Sim是行业最广泛使用的仿真平台"
+    },
+    {
+      "from": "机器人仿真平台",
+      "to": "MuJoCo",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "MuJoCo是学术研究首选仿真器"
+    },
+    {
+      "from": "机器人仿真平台",
+      "to": "Newton物理引擎",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "Newton是新一代开源物理引擎"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "Isaac Sim",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NVIDIA开发Isaac Sim"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "Newton物理引擎",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NVIDIA与Google DeepMind、Disney联合开发Newton"
+    },
+    {
+      "from": "company:AutoDesk:美股:ADSK",
+      "to": "机器人仿真平台",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Forge平台用于工业数字孪生"
+    },
+    {
+      "from": "具身智能",
+      "to": "机器人边缘计算",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "边缘计算是机器人的实时控制核心"
+    },
+    {
+      "from": "机器人边缘计算",
+      "to": "Jetson Thor",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "Jetson Thor是专为人形机器人设计的边缘芯片"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "Jetson Thor",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NVIDIA开发Jetson Thor"
+    },
+    {
+      "from": "company:高通:美股:QCOM",
+      "to": "机器人边缘计算",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "高通龙翼IQ10面向人形机器人"
+    },
+    {
+      "from": "company:寒武纪:A股:688256",
+      "to": "机器人边缘计算",
+      "relationType": "produces",
+      "status": "research",
+      "note": "寒武纪具身智能专用芯片5TOPS/W"
+    },
+    {
+      "from": "地平线",
+      "to": "机器人边缘计算",
+      "relationType": "produces",
+      "status": "research",
+      "note": "征程系列芯片可用于机器人"
+    },
+    {
+      "from": "company:瑞芯微:A股:603893",
+      "to": "机器人边缘计算",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "瑞芯微机器人主控芯片龙头"
+    },
+    {
+      "from": "具身智能",
+      "to": "六维力矩传感器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "力控是机器人安全交互的基础"
+    },
+    {
+      "from": "具身智能",
+      "to": "电子皮肤",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "触觉感知是灵巧操作的关键"
+    },
+    {
+      "from": "具身智能",
+      "to": "3D视觉传感器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "视觉是机器人环境感知的核心"
+    },
+    {
+      "from": "company:柯力传感:A股:603662",
+      "to": "六维力矩传感器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "国内唯一实现六维力传感器量产"
+    },
+    {
+      "from": "company:汉威科技:A股:300007",
+      "to": "电子皮肤",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "华为人形机器人电子皮肤唯一供应商"
+    },
+    {
+      "from": "company:福莱新材:A股:605488",
+      "to": "电子皮肤",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "电阻式柔性传感器与特斯拉方案吻合"
+    },
+    {
+      "from": "company:奥比中光:A股:688322",
+      "to": "3D视觉传感器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "3D视觉传感器国产替代龙头"
+    },
+    {
+      "from": "ATI Industrial Automation",
+      "to": "六维力矩传感器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "全球六维力传感器龙头"
+    },
+    {
+      "from": "具身智能",
+      "to": "空心杯电机",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "灵巧手驱动的核心部件"
+    },
+    {
+      "from": "具身智能",
+      "to": "无框力矩电机",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "关节驱动的核心部件"
+    },
+    {
+      "from": "company:鸣志电器:A股:603728",
+      "to": "空心杯电机",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "空心杯电机全球市占率前三"
+    },
+    {
+      "from": "company:步科股份:A股:688160",
+      "to": "无框力矩电机",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "国内无框力矩电机龙头"
+    },
+    {
+      "from": "company:汇川技术:A股:300124",
+      "to": "无框力矩电机",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "推出第四代FMK系列无框力矩电机"
+    },
+    {
+      "from": "company:汇川技术:A股:300124",
+      "to": "机器人边缘计算",
+      "relationType": "produces",
+      "status": "research",
+      "note": "汇川开发伺服驱动和控制器"
+    },
+    {
+      "from": "company:卧龙电驱:A股:600580",
+      "to": "无框力矩电机",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "为宇树提供大扭矩关节动力"
+    },
+    {
+      "from": "Maxon Motor",
+      "to": "空心杯电机",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "瑞士精密电机龙头"
+    },
+    {
+      "from": "具身智能",
+      "to": "谐波减速器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "旋转关节核心传动部件"
+    },
+    {
+      "from": "具身智能",
+      "to": "RV减速器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "大负载关节核心传动部件"
+    },
+    {
+      "from": "company:绿的谐波:A股:688017",
+      "to": "谐波减速器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "国内市占率超60%，全球超35%"
+    },
+    {
+      "from": "company:双环传动:A股:002472",
+      "to": "RV减速器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "RV减速器核心供应商"
+    },
+    {
+      "from": "company:中大力德:A股:002896",
+      "to": "谐波减速器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "全品类减速器生产能力"
+    },
+    {
+      "from": "company:中大力德:A股:002896",
+      "to": "RV减速器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "RV减速器产品已通过验证"
+    },
+    {
+      "from": "Harmonic Drive",
+      "to": "谐波减速器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "全球谐波减速器发明者"
+    },
+    {
+      "from": "Nabtesco",
+      "to": "RV减速器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "全球RV减速器龙头"
+    },
+    {
+      "from": "具身智能",
+      "to": "行星滚柱丝杠",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "线性关节核心传动部件"
+    },
+    {
+      "from": "company:五洲新春:A股:603667",
+      "to": "行星滚柱丝杠",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "反向行星滚柱丝杠主力供应商"
+    },
+    {
+      "from": "company:双林股份:A股:300100",
+      "to": "行星滚柱丝杠",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "反向式行星滚柱丝杠国内唯一量产"
+    },
+    {
+      "from": "company:贝斯特:A股:300580",
+      "to": "行星滚柱丝杠",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "C0级高精度丝杠"
+    },
+    {
+      "from": "company:恒立液压:A股:601100",
+      "to": "行星滚柱丝杠",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "投资14亿元建设线性驱动器项目"
+    },
+    {
+      "from": "新剑传动",
+      "to": "行星滚柱丝杠",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "特斯拉一级供应商，年产100万台"
+    },
+    {
+      "from": "具身智能",
+      "to": "旋转执行器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "一体化旋转关节模组"
+    },
+    {
+      "from": "具身智能",
+      "to": "线性执行器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "一体化直线运动模组"
+    },
+    {
+      "from": "旋转执行器",
+      "to": "谐波减速器",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "旋转执行器核心包含谐波减速器"
+    },
+    {
+      "from": "旋转执行器",
+      "to": "无框力矩电机",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "旋转执行器核心包含无框电机"
+    },
+    {
+      "from": "线性执行器",
+      "to": "行星滚柱丝杠",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "线性执行器核心包含行星滚柱丝杠"
+    },
+    {
+      "from": "company:拓普集团:A股:601689",
+      "to": "旋转执行器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "承担直线/旋转执行器总成"
+    },
+    {
+      "from": "company:拓普集团:A股:601689",
+      "to": "线性执行器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "直线执行器总成供应商"
+    },
+    {
+      "from": "company:三花智控:A股:002050",
+      "to": "旋转执行器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "关节模组总成核心供应商"
+    },
+    {
+      "from": "company:三花智控:A股:002050",
+      "to": "线性执行器",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "线性执行器总成供应商"
+    },
+    {
+      "from": "人形机器人",
+      "to": "灵巧手",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "灵巧手是人形机器人的末端执行器"
+    },
+    {
+      "from": "灵巧手",
+      "to": "空心杯电机",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "灵巧手手指由空心杯电机驱动"
+    },
+    {
+      "from": "灵巧手",
+      "to": "电子皮肤",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "灵巧手集成触觉传感器阵列"
+    },
+    {
+      "from": "company:兆威机电:A股:003021",
+      "to": "灵巧手",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "17自由度灵巧手量产"
+    },
+    {
+      "from": "company:江苏雷利:A股:300660",
+      "to": "灵巧手",
+      "relationType": "produces",
+      "status": "research",
+      "note": "灵巧手微型传动部件"
+    },
+    {
+      "from": "具身智能",
+      "to": "PEEK材料",
+      "relationType": "contains",
+      "status": "fact",
+      "note": "机器人轻量化的核心材料"
+    },
+    {
+      "from": "company:中研股份:A股:688716",
+      "to": "PEEK材料",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "国产PEEK龙头，特斯拉关节供应商"
+    },
+    {
+      "from": "company:沃特股份:A股:002886",
+      "to": "PEEK材料",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "全链条PEEK生产能力"
+    },
+    {
+      "from": "company:中欣氟材:A股:002915",
+      "to": "PEEK材料",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "提供PEEK核心单体DFBP"
+    },
+    {
+      "from": "company:特斯拉:美股:TSLA",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Optimus人形机器人"
+    },
+    {
+      "from": "Figure AI",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Figure 03人形机器人"
+    },
+    {
+      "from": "波士顿动力",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "电动版Atlas人形机器人"
+    },
+    {
+      "from": "Agility Robotics",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Digit仓库人形机器人"
+    },
+    {
+      "from": "Apptronik",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Apollo工业人形机器人"
+    },
+    {
+      "from": "1X Technologies",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "NEO家庭人形机器人"
+    },
+    {
+      "from": "company:宇树科技",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "H1/G1人形机器人"
+    },
+    {
+      "from": "company:优必选",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "Walker S2工业人形机器人"
+    },
+    {
+      "from": "智元机器人",
+      "to": "人形机器人",
+      "relationType": "produces",
+      "status": "fact",
+      "note": "远征/灵犀系列人形机器人"
+    },
+    {
+      "from": "company:绿的谐波:A股:688017",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "为Optimus供应谐波减速器"
+    },
+    {
+      "from": "company:拓普集团:A股:601689",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "为Optimus供应执行器总成"
+    },
+    {
+      "from": "company:三花智控:A股:002050",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "获6.85亿美元订单供应关节模组"
+    },
+    {
+      "from": "company:鸣志电器:A股:603728",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "research",
+      "note": "通过C轮认证供应空心杯电机"
+    },
+    {
+      "from": "新剑传动",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "一级供应商供应行星滚柱丝杠"
+    },
+    {
+      "from": "company:五洲新春:A股:603667",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "research",
+      "note": "供应反向行星滚柱丝杠"
+    },
+    {
+      "from": "company:柯力传感:A股:603662",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "research",
+      "note": "六维力传感器进入验证阶段"
+    },
+    {
+      "from": "company:中研股份:A股:688716",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "Optimus关节轴承独家供应商"
+    },
+    {
+      "from": "company:奥比中光:A股:688322",
+      "to": "company:宇树科技",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "为H1提供3D视觉传感器"
+    },
+    {
+      "from": "company:汇川技术:A股:300124",
+      "to": "company:优必选",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "为Walker提供伺服系统"
+    },
+    {
+      "from": "company:汇川技术:A股:300124",
+      "to": "company:宇树科技",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "为宇树提供伺服电机"
+    },
+    {
+      "from": "company:汉威科技:A股:300007",
+      "to": "company:优必选",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "电子皮肤供应商"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "Figure AI",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "提供GR00T模型和仿真平台"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "Apptronik",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "提供Isaac仿真和GR00T平台"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "波士顿动力",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "Jetson Thor集成到Atlas"
+    },
+    {
+      "from": "company:NVIDIA:美股:NVDA",
+      "to": "company:宇树科技",
+      "relationType": "supplies",
+      "status": "fact",
+      "note": "GR00T平台合作伙伴"
+    },
+    {
+      "from": "company:福莱新材:A股:605488",
+      "to": "company:特斯拉:美股:TSLA",
+      "relationType": "supplies",
+      "status": "research",
+      "note": "电子皮肤送样特斯拉"
+    }
+  ]
+}

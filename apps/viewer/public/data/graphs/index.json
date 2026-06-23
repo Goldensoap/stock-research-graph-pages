@@ -11,6 +11,12 @@
       "label": "800V HVDC AI数据中心电力架构产业图谱",
       "file": "800v-hvdc-ai.json",
       "summary": "围绕NVIDIA 800V HVDC与华为AI数据中心高压直流配电架构的全产业链拆解，涵盖从原材料、功率半导体、固态变压器、电气总包、电源模块、PCB、被动元件到液冷系统的完整供应链关系。"
+    },
+    {
+      "id": "embodied_ai_industry_graph",
+      "label": "具身智能产业链",
+      "file": "embodied_ai_industry_graph.json",
+      "summary": "具身智能（Embodied AI）产业链全景图谱，涵盖物理AI大模型、仿真模拟、机器人本体、执行器与关节、减速器、丝杠、电机、传感器、灵巧手、轻量化材料、计算平台等核心环节，以及对应的美股和A股核心上市公司。"
     }
   ]
 }
